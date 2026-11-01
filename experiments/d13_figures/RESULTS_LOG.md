@@ -6,4 +6,5 @@ Figures are drawn only from run records (`d08_eval_20261101_02`, `d11_event_2026
 - `_04`: abbreviated counts; Fig 1 axis label clipped.
 - `_05`: final layout (checked visually), read the pre-fix runs.
 - `_06`: after the reproducibility reruns (reads `d08_eval_20261101_03`, `d11_event_20261101_02`).
-- **`_07`: final (cited)**: same figures as `_06`, saved without PDF timestamps so a rerun gives byte-identical files (verified with a throwaway repeat run).
+- `_07`: same figures as `_06`, saved without PDF timestamps so a rerun gives byte-identical files (verified with a throwaway repeat run).
+- **`_08`: final (cited)**: `_07` plus PNG previews (200 dpi) for the README; PDFs and PNGs byte-identical on a repeat run.

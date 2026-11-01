@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this code or these records, please cite the paper and this repository."
+title: "Retracted neighbours and future retractions: code, pre-registration and run records"
+type: software
+authors:
+  - family-names: "Mohasel Arjomandi"
+    given-names: "Hossein"
+license: MIT
+repository-code: "https://github.com/HosseinMA96/retracted-neighbours-open-data"
+date-released: "2026-11-01"
+keywords:
+  - retraction
+  - research integrity
+  - citation networks
+  - paper mills
+  - OpenCitations
+  - Retraction Watch
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Mohasel Arjomandi"
+      given-names: "Hossein"
+  title: "Do links to retracted papers predict future retractions? An out-of-sample test on the open biomedical citation graph"
+  status: submitted
+  year: 2026

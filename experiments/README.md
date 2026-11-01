@@ -12,7 +12,7 @@
 | `d10_nih/` | NIH-funded papers citing retracted work | `d10_nih_20261101_01` | `RESULTS_LOG.md` |
 | `d11_event/` | Citations around retraction vs matched controls | `d11_event_20261101_02` (`_03` = repeat, identical) | `RESULTS_LOG.md` |
 | `d12_check/` | Label-quality checks (match precision; PubMed-only retractions) | `d12_check_20261101_02` | `RESULTS_LOG.md` |
-| `d13_figures/` | Paper figures from run records | `d13_fig_20261101_07` | `RESULTS_LOG.md` |
+| `d13_figures/` | Paper figures from run records | `d13_fig_20261101_08` | `RESULTS_LOG.md` |
 | `d14_dataset/` | Release dataset (built on the VM) | `d14_dataset_20261101_02` | `RESULTS_LOG.md` |
 
 Runs not cited (failed, stopped or superseded) are listed with the reason in `../REPRODUCE.md` §5 and carry a

@@ -1,0 +1,26 @@
+{
+  "run_id": "d13_fig_20261101_08",
+  "script": "d13_figures.py",
+  "script_sha256": "10ab27a5779c8e4d7fa6884d3f9efe69196a835dd6fde88fbbd8bfbd8e76b247",
+  "config": {
+    "sources": {
+      "eval": "d08_rq1/runs/d08_eval_20261101_03/run.json",
+      "event": "d11_event/runs/d11_event_20261101_02/run.json"
+    }
+  },
+  "host": "Hossein",
+  "python": "3.10.9",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "started_utc": "2026-11-01T20:27:32Z",
+  "results": {
+    "figures": [
+      "fig1_dose.pdf",
+      "fig1_dose.png",
+      "fig2_mh.pdf",
+      "fig2_mh.png",
+      "fig3_event.pdf",
+      "fig3_event.png"
+    ]
+  },
+  "seconds": 1.5
+}
