@@ -46,7 +46,7 @@ Run each from its experiment folder: `python <script> <run_id> [args]`.
 | NIH exposure | `d10_nih/d10_nih.py d10_nih_20261101_01 d05_match_20261101_02` | 1 min |
 | Event study | `d11_event/d11_event.py d11_event_20261101_02 d05_match_20261101_02` (repeat `_03` = identical) | 1 min |
 | Label checks | `d12_check/d12_check.py d12_check_20261101_02 d05_match_20261101_02` | 5 min |
-| Figures | `d13_figures/d13_figures.py d13_fig_20261101_06` (reads run records only; runs on a laptop) | seconds |
+| Figures | `d13_figures/d13_figures.py d13_fig_20261101_07` (reads run records only; runs on a laptop) | seconds |
 | Release dataset | `d14_dataset/d14_dataset.py d14_dataset_20261101_02 d05_match_20261101_02` | 2 min |
 | Paper | `cd paper && tectonic -X compile main.tex` | – |
 
@@ -71,7 +71,7 @@ Run each from its experiment folder: `python <script> <run_id> [args]`.
 | `d11_event_20261101_01` | Superseded by `_02` (deterministic controls) |
 | `d12_check_20261101_01` | Superseded by `_02` (deterministic sample order) |
 | `d14_dataset_20261101_01` | Superseded by `_02` (sorted edge file) |
-| `d13_fig_20261101_01`–`_05` | Layout iterations and pre-fix inputs; the figures in the paper are `d13_fig_20261101_06` |
+| `d13_fig_20261101_01`–`_06` | Layout iterations, pre-fix inputs, PDF timestamps; the figures in the paper are `d13_fig_20261101_07` |
 
 ## 6. Restoring the large data
 The large intermediate tables (ID map, PubMed table, frozen scores, matched tables, community memberships, release

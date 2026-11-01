@@ -1,0 +1,1 @@
+Layout final; superseded by d13_fig_20261101_07 (PDFs without timestamps, byte-reproducible).

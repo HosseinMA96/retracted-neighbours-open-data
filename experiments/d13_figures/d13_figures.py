@@ -23,7 +23,7 @@ ax.errorbar(x, r, yerr=[r - d.lo * 100, d.hi * 100 - r], fmt="o", color=BLUE, ms
 ax.set_xticks(list(x)); ax.set_xticklabels([f"{a}\n" + (f"{n/1e6:.1f}M" if n >= 1e6 else f"{n/1e3:.0f}k" if n >= 1e4 else f"{n:,}") for a, n in zip(d.s1, d.n)], fontsize=7); ax.set_yscale("log"); ax.set_ylim(0.02, 2); ax.set_xlim(-0.5, len(d) - 0.5)
 ax.set_xlabel("Retracted references, $S_1$ (candidates below)"); ax.set_ylabel("Retracted later (%)")
 ax.grid(axis="y", color=GRID, lw=0.6); ax.set_axisbelow(True); fig.tight_layout()
-fig.savefig(FIG / "fig1_dose.pdf", bbox_inches="tight"); out.append("fig1_dose.pdf"); plt.close(fig)
+fig.savefig(FIG / "fig1_dose.pdf", bbox_inches="tight", metadata={"CreationDate": None, "ModDate": None}); out.append("fig1_dose.pdf"); plt.close(fig)
 
 # Fig 2: within-journal MH odds ratios, main T0 vs T0'
 rows = [("s1_ge1|all", "Cites retracted: all"), ("s1_ge1|mill", "Cites retracted: paper-mill outcome"),
@@ -39,7 +39,7 @@ ax.axvline(1, color=MUTED, lw=0.8, ls="--"); ax.set_xscale("log"); ax.set_xticks
 ax.set_yticks(range(len(rows))); ax.set_yticklabels([r[1] for r in rows]); ax.invert_yaxis()
 ax.set_xlabel("Odds ratio within journal × year (95% CI)"); ax.legend(frameon=False, fontsize=7, loc="lower center", bbox_to_anchor=(0.5, 1.0), ncol=2)
 ax.grid(axis="x", color=GRID, lw=0.6); ax.set_axisbelow(True); fig.tight_layout()
-fig.savefig(FIG / "fig2_mh.pdf", bbox_inches="tight"); out.append("fig2_mh.pdf"); plt.close(fig)
+fig.savefig(FIG / "fig2_mh.pdf", bbox_inches="tight", metadata={"CreationDate": None, "ModDate": None}); out.append("fig2_mh.pdf"); plt.close(fig)
 
 # Fig 3: citations per paper around retraction
 e = pd.DataFrame(json.loads((EXP / SRC["event"]).read_text())["results"]["per_paper_all"])
@@ -49,7 +49,7 @@ ax.annotate("Retracted", (e.k.iloc[-1], e.retracted.iloc[-1]), xytext=(4, 0), te
 ax.annotate("Matched\ncontrols", (e.k.iloc[-1], e.control.iloc[-1]), xytext=(4, 0), textcoords="offset points", color=INK, fontsize=8, va="center")
 ax.axvline(0, color=MUTED, lw=0.8, ls="--"); ax.set_xlabel("Year relative to retraction notice"); ax.set_ylabel("Citations per paper")
 ax.set_xlim(-5.4, 3.6); ax.grid(axis="y", color=GRID, lw=0.6); ax.set_axisbelow(True); fig.tight_layout()
-fig.savefig(FIG / "fig3_event.pdf", bbox_inches="tight"); out.append("fig3_event.pdf"); plt.close(fig)
+fig.savefig(FIG / "fig3_event.pdf", bbox_inches="tight", metadata={"CreationDate": None, "ModDate": None}); out.append("fig3_event.pdf"); plt.close(fig)
 for f in out:
     (run.dir / f).write_bytes((FIG / f).read_bytes())
 run.log("figures", out)

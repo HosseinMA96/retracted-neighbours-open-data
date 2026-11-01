@@ -5,4 +5,5 @@ Figures are drawn only from run records (`d08_eval_20261101_02`, `d11_event_2026
 - `_03`: tight bounding box; Fig 1 tick labels collided.
 - `_04`: abbreviated counts; Fig 1 axis label clipped.
 - `_05`: final layout (checked visually), read the pre-fix runs.
-- **`_06`: final** after the reproducibility reruns (reads `d08_eval_20261101_03`, `d11_event_20261101_02`).
+- `_06`: after the reproducibility reruns (reads `d08_eval_20261101_03`, `d11_event_20261101_02`).
+- **`_07`: final (cited)**: same figures as `_06`, saved without PDF timestamps so a rerun gives byte-identical files (verified with a throwaway repeat run).
