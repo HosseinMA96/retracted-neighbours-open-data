@@ -1,0 +1,8 @@
+error    libmamba Could not set lock (Resource temporarily unavailable)
+warning  libmamba Cannot lock '/home/azureuser/.cache/mamba/proc'
+    Waiting for other mamba process to finish
+[    52.5s] retracted_eligible: 12197
+[    52.5s] matched_pairs: 11788
+[   157.9s] per_paper_all: [{'k': -5, 'control': 1.0667, 'retracted': 1.3817, 'ratio': 1.2953}, {'k': -4, 'control': 1.2913, 'retracted': 1.7272, 'ratio': 1.3375}, {'k': -3, 'control': 1.589, 'retracted': 2.0954, 'ratio': 1.3187}, {'k': -2, 'control': 2.0273, 'retracted': 2.672, 'ratio': 1.318}, {'k': -1, 'control': 2.5989, 'retracted': 3.4284, 'ratio': 1.3192}, {'k': 0, 'control': 3.5397, 'retracted': 4.2516, 'ratio': 1.2011}, {'k': 1, 'control': 4.2938, 'retracted': 2.8459, 'ratio': 0.6628}, {'k': 2, 'control': 4.1942, 'retracted': 1.9607, 'ratio': 0.4675}]
+[   157.9s] pairs_by_mill: {'False': 11021, 'True': 767}
+done in 157.9 s -> /home/azureuser/d/experiments/d11_event/runs/d11_event_20261101_02

@@ -1,0 +1,41 @@
+% Discussion. Numbers: ../FINDINGS.md.
+\section{Discussion}\label{sec:discussion}
+
+\paragraph{The signal is real and not just the journal.} Citing a paper that has already been retracted is followed by a
+markedly higher chance of retraction in the next three years, and the association survives comparison within journal
+and publication year (odds ratio about 3). This turns the retrospective association reported by
+\citet{lou2026beyond} into a prospective one and shows that it is not explained by retraction waves within journals.
+The rate rises with the number of retracted references up to three or four, and citing a paper-mill retraction is the
+strongest single marker. Being cited by a retracted paper is at least as informative as citing one, which fits the
+picture of interlinked clusters of problematic papers \citep{candal2024references}.
+
+\paragraph{But it is a weak screen on its own.} A relative risk of nine on a base rate of 0.04\% still means that almost
+all flagged papers are not retracted: about 1 in 110 of the top 1,000 by $S_1$. And 84\% of later retractions cite no
+retracted paper at all, so the signal misses most cases. A ``Feet of Clay'' flag is therefore a reason to look, not
+evidence of a problem. Many papers cite retracted work for good reasons, such as reviews, critiques, or citations made
+before the retraction. Papers with five or more retracted references were not more likely to be retracted than papers with three
+or four; whether these are mostly reviews or commentaries that discuss retracted work was not examined.
+
+\paragraph{Timing matters.} The best screen depends on where the time point falls relative to retraction waves. Inside
+the late-2023 wave, the journal's own retraction rate identified future retractions with a lift of about 90, and the
+neighbourhood signal added little for paper-mill cases. Once the wave had passed, the journal rate carried almost no
+information about who would be retracted next, while the neighbourhood signal kept its strength. A practical screen
+should combine both and be refitted as waves come and go; the model fitted on outcomes up to January 2024, which put weight on the journal
+rate, ranked fewer later retractions at the very top than the reference count alone.
+
+\paragraph{NIH-funded research.} NIH-funded papers cite already-retracted work as often as other papers in the same
+journal and year. About 0.5\% of biomedical papers published 2000--2023 do so: 103,349 papers in the graph, 10,872 of them
+NIH-funded. Whether these citations rely on the retracted findings cannot be read from
+citation links alone; citation-context resources \citep{joseph2026sanecite,hsiao2021continued} could answer it.
+
+\paragraph{Limitations.} The test is limited to papers in the January 2024 OpenCitations snapshot, which depends on
+publishers depositing references with Crossref and is complete only to about September 2023; papers without deposited
+references cannot be scored, and 17\% of retracted papers could not be matched to the graph. Retraction Watch is
+incomplete: 3,205 papers flagged as retracted in PubMed are missing from the copy used, three quarters of them with
+notices from 2024 onwards, so some later retractions are missing from the outcome labels. A retraction is not proof of
+misconduct; non-retracted candidates include papers that should have been
+retracted, so precision is a lower bound on the share of problematic papers among the flagged ones. The outcome window
+is under three years, while the median time from publication to retraction for biomedical papers retracted after January
+2024 was about 2.7 years, so
+many later retractions are not yet observed. NIH funding is taken from PubMed grant lists, which are incomplete. All
+results are associations.

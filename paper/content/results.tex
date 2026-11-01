@@ -1,0 +1,88 @@
+% Results. Numbers: ../FINDINGS.md.
+\section{Results}\label{sec:results}
+
+\subsection{Exposure and outcomes}
+Of the 10,495,850 candidates, 218,561 (2.1\%) cite at least one paper that had been retracted by $T_0$, and 172,149
+are cited by one. Between February 2024 and October 2026, 4,323 candidates were retracted (0.041\%), 418 of them for
+paper-mill reasons.
+
+\subsection{Association and dose}
+Candidates that cite a retracted paper were retracted later far more often (Table~\ref{tab:dose}). The rate rises from
+0.035\% without a retracted reference to 0.27\% with one, 0.51\% with two and 0.83\% with three or four; the
+1,451 candidates with five or more retracted references show 0.76\%, with a wide interval. The risk ratio for
+$S_1 \ge 1$ is 8.8 (95\% CI 8.1--9.6). It is 17.8 (15.5--20.6) for citing a paper-mill retraction, and 6.8
+(6.2--7.5) for being cited by a retracted paper.
+
+\begin{table}[t]
+\centering
+\caption{Later retraction by number of references to papers retracted by $T_0$ (main analysis).}\label{tab:dose}
+\begin{tabular}{lrrr}
+\toprule
+$S_1$ & Candidates & Retracted later & Rate (95\% CI) \\
+\midrule
+0 & 10,277,289 & 3,640 & 0.035\% (0.034--0.037) \\
+1 & 187,735 & 502 & 0.27\% (0.25--0.29) \\
+2 & 23,200 & 119 & 0.51\% (0.43--0.61) \\
+3--4 & 6,175 & 51 & 0.83\% (0.63--1.08) \\
+$\ge 5$ & 1,451 & 11 & 0.76\% (0.42--1.35) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Within journal and year}
+Part of this association reflects journals: retractions cluster in journals and publication years, and papers in the
+same journal cite one another. Within journal $\times$ publication year, the Mantel--Haenszel odds ratio for
+$S_1 \ge 1$ is 2.99 (95\% CI 2.73--3.27; 1,201 informative strata holding 4,258 of the positives). By the
+pre-registered rule, the signal holds within journal. It holds for paper-mill outcomes (3.37, 2.65--4.29) and for
+other outcomes (2.92, 2.65--3.21). Being cited by a retracted paper gives a within-journal odds ratio of 3.76
+(3.37--4.20). The estimate is unchanged without candidates whose DOI maps to several graph nodes (2.99) and slightly
+higher for papers published 2015--2022 (3.10, 2.82--3.41).
+
+\subsection{Screening value}
+Despite the strong relative effect, the signal is weak as a screen (Table~\ref{tab:screen}). Most later retractions,
+3,640 of 4,323 (84\%), cite no retracted paper at all. Among the 1,000 candidates with the most retracted references,
+9 were retracted later (0.9\%, lift 22 over the base rate); among the top 10,000, 72 (0.72\%), which is 1.7\% of all
+positives. The journal rate alone ranks one positive among its top 1,000 (0.1\%). The combined model, fitted on the earlier
+window, has the highest average precision (0.0037) but a lower precision at 1,000 than the $S_1$ ranking.
+
+\begin{table}[t]
+\centering
+\caption{Screening performance in the main analysis (95\% bootstrap intervals). Base rate 0.041\%.}\label{tab:screen}
+\begin{tabular}{lrrrr}
+\toprule
+Ranking & Prec.@1,000 & Lift@1,000 & Prec.@10,000 & Avg. precision \\
+\midrule
+$S_1$ & 0.90\% (0.40--1.50) & 21.9 & 0.72\% (0.56--0.89) & 0.0013 \\
+Journal rate $B$ & 0.10\% (0--0.30) & 2.4 & 0.02\% & 0.0023 \\
+Combined model & 0.40\% (0.10--0.80) & 9.7 & 0.79\% (0.61--0.94) & 0.0037 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{When the time point falls inside a retraction wave}
+With $T_0' = $ 30 September 2023, the outcome window contains the mass retractions of late 2023 (7,578 positives,
+3,141 of them paper-mill). The journal rate then becomes the best screen: 6.8\% of its top 1,000 candidates were
+retracted (lift 94), against 1.1\% for $S_1$. The within-journal odds ratio for $S_1 \ge 1$ falls to 2.00
+(1.86--2.15), and to 1.27 (1.13--1.42) for paper-mill outcomes, while it stays at 2.97 for other outcomes. By
+January 2024 those waves had passed, and the journal rate placed only one future retraction among its top 1,000.
+
+\subsection{Supporting analyses}
+\paragraph{Community concentration.} The 27,567 retracted biomedical papers with a journal, their controls from the
+same journal and year, and all their neighbours form a subgraph of 2.7 million papers and 57 million citations. Leiden
+found 197 and 200 communities with two seeds (modularity 0.65 and 0.66); the two partitions agree only moderately
+(adjusted Rand index 0.41), so both are reported. Retracted papers are more concentrated than their controls: the probability that
+two retracted papers share a community is 1.15 and 1.11 times that of two controls (permutation $p = 0.001$ for
+both, with a null mean of 1.00). The excess comes mainly from paper-mill retractions (1.68 and 1.52); for other
+retractions it is small (1.06 and 1.05). Retracted paper-mill papers thus cluster in the citation graph beyond what
+their journal and year imply, in line with \citet{feng2024molbio} and \citet{candal2024references}.
+
+\paragraph{NIH exposure.} Of 2,332,727 NIH-funded biomedical papers published 2000--2023 in the graph, 10,872 (0.47\%)
+cite at least one paper in a year after its retraction, compared with 0.48\% of other biomedical papers. Within journal
+and year, NIH funding makes no practical difference (odds ratio 1.03, 1.00--1.05). NIH-funded papers cited 3,548
+distinct retracted papers after their retraction.
+
+\paragraph{Citations around retraction.} For 11,788 papers retracted 2000--2021 and matched controls from the same
+journal and year, retracted papers received about 1.3 times the controls' citations in each of the five years before
+the retraction year, 0.66 times in the year after and 0.47 times two years after. Citations continue after
+retraction, at about two per paper in the second year, consistent with earlier studies
+\citep{hsiao2021continued,schneider2020continued}.

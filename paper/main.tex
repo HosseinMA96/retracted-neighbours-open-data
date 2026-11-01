@@ -1,0 +1,65 @@
+% Paper D, CENTRAL version (journal-neutral, numbered refs). All text lives in content/; see content/README.md.
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
+\graphicspath{{figures/}}
+\input{content/meta}
+\title{\papertitle}
+\author{Hossein Mohasel Arjomandi\thanks{Microsoft, Redmond, WA, USA; \texttt{hosseinm@microsoft.com}. The views expressed in this article are the author's own and do not necessarily reflect those of Microsoft.}}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+\input{content/abstract}
+\end{abstract}
+\noindent\textbf{Keywords:} \paperkeywords
+
+\input{content/intro}
+\input{content/related}
+\input{content/methods}
+\input{content/results}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.55\linewidth]{fig1_dose}
+\caption{Share of candidates retracted between February 2024 and October 2026, by the number of their references to
+papers retracted by 31 January 2024 (95\% Wilson intervals; log scale). Below each level: number of candidates.}
+\label{fig:dose}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.85\linewidth]{fig2_mh}
+\caption{Mantel--Haenszel odds ratios within journal $\times$ publication year (95\% Robins--Breslow--Greenland
+intervals), for citing a retracted paper ($S_1 \ge 1$) and being cited by one ($S_3 \ge 1$), with the main and the
+earlier time point.}
+\label{fig:mh}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.55\linewidth]{fig3_event}
+\caption{Citations per paper by year relative to the retraction notice, for 11,788 papers retracted 2000--2021 and
+controls matched on journal and publication year.}
+\label{fig:event}
+\end{figure}
+
+\input{content/discussion}
+\input{content/conclusions}
+
+\section*{Data and code availability}
+\input{content/availability}
+
+\section*{Declaration of generative AI use}
+\input{content/ai_use}
+
+\bibliographystyle{unsrtnat}
+\bibliography{refs}
+\end{document}

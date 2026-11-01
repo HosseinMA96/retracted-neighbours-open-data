@@ -1,0 +1,4 @@
+[    11.9s] retracted_with_journal: 28859
+[    11.9s] pairs: 27567
+[    11.9s] pairs_mill: 5394
+[    57.3s] subgraph: {'nodes': 2720102, 'edges_induced': 57402166}

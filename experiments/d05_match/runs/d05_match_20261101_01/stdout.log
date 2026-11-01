@@ -1,0 +1,26 @@
+[     8.9s] rw_papers: 62735
+[     8.9s] rw_pmid_given: 30601
+[     8.9s] rw_pmid_filled_from_pubmed_doi: 314
+[     9.0s] rw_pmid_given_not_in_pubmed26: 83
+[     9.4s] pubmed_flagged_retracted: 30697
+[     9.4s] pubmed_flag_breakdown: [(True, False, 2), (True, True, 30695)]
+[     9.4s] rw_with_pmid_any: 30915
+[     9.4s] rw_with_pmid_any_flagged_in_pubmed: 27456
+[     9.4s] rw_with_pmid_any_flagged_by_notice_year: [(2015, 832, 677), (2016, 974, 780), (2017, 828, 715), (2018, 906, 784), (2019, 982, 838), (2020, 1569, 1437), (2021, 2187, 2082), (2022, 2368, 2271), (2023, 7785, 7716), (2024, 3533, 3453), (2025, 3038, 2820), (2026, 1369, 118)]
+[     9.4s] pubmed_flagged_not_in_rw: 3205
+[    10.2s] rw_matched_by_doi: 51673
+[    10.2s] rw_matched_by_pmid: 0
+[    10.2s] rw_matched_any: 51673
+[    10.2s] rw_papers_with_several_iids: 549
+[    10.2s] iids_shared_by_several_rw_papers: 5
+Traceback (most recent call last):
+  File "/home/azureuser/d/experiments/d05_match/d05_match.py", line 53, in <module>
+    run.log("rw_matched_by_period", q(f"""SELECT notice_date <= DATE '{T0}' AS by_T0, count(*) n, count(m.key) matched FROM rw2
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/azureuser/d/experiments/d05_match/d05_match.py", line 15, in <lambda>
+    q = lambda s: con.execute(s).fetchall()
+                  ^^^^^^^^^^^^^^
+_duckdb.ParserException: Parser Error: syntax error at or near "matched"
+
+LINE 1: ... <= DATE '2024-01-31' AS by_T0, count(*) n, count(m.key) matched FROM rw2
+                                                                    ^

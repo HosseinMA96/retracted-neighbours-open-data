@@ -1,0 +1,34 @@
+[     6.5s] rw_papers: 62735
+[     6.5s] rw_pmid_given: 30601
+[     6.5s] rw_pmid_filled_from_pubmed_doi: 314
+[     6.6s] rw_pmid_given_not_in_pubmed26: 83
+[     6.9s] pubmed_flagged_retracted: 30697
+[     6.9s] pubmed_flag_breakdown: [(True, False, 2), (True, True, 30695)]
+[     6.9s] rw_with_pmid_any: 30915
+[     7.0s] rw_with_pmid_any_flagged_in_pubmed: 27456
+[     7.0s] rw_with_pmid_any_flagged_by_notice_year: [(2015, 832, 677), (2016, 974, 780), (2017, 828, 715), (2018, 906, 784), (2019, 982, 838), (2020, 1569, 1437), (2021, 2187, 2082), (2022, 2368, 2271), (2023, 7785, 7716), (2024, 3533, 3453), (2025, 3038, 2820), (2026, 1369, 118)]
+[     7.0s] pubmed_flagged_not_in_rw: 3205
+[     7.7s] rw_matched_by_doi: 51673
+[     7.7s] rw_matched_by_pmid: 25208
+[     7.7s] rw_matched_any: 52254
+[     7.8s] rw_papers_with_several_iids: 893
+[     7.8s] iids_shared_by_several_rw_papers: 19
+[     7.8s] rw_matched_by_period: [(False, 13191, 8726), (True, 49544, 43528)]
+[    81.1s] retracted_nodes: 53170
+[    81.1s] retracted_nodes_out_deg_0: 3333
+[    81.1s] retracted_nodes_in_deg_0: 12627
+[    81.1s] retracted_nodes_isolated: 292
+[    81.1s] retracted_edges_out_in: (1481454, 799317)
+[    85.1s] biomedical_nodes: 31464435
+[    85.4s] biomedical_nodes_via_pmid_only_meta: 26582951
+[    89.4s] candidates_2010_2023: 15216941
+[    89.4s] candidates_2015_2023: 10786018
+[   114.3s] candidates_2015_2023_with_refs: 10519522
+[   114.4s] candidates_with_refs_by_year: [(2010, 787158, 755117), (2011, 831588, 800728), (2012, 882434, 851479), (2013, 946423, 916419), (2014, 983320, 953444), (2015, 1021713, 993133), (2016, 1053391, 1026765), (2017, 1075683, 1047685), (2018, 1112611, 1059954), (2019, 1174549, 1133791), (2020, 1368406, 1330793), (2021, 1476813, 1449582), (2022, 1456428, 1442064), (2023, 1046424, 1035755)]
+[   114.4s] positives_2015_2023: 4359
+[   114.5s] positives_2015_2023_with_refs: 4325
+[   114.5s] positives_2015_2023_paper_mill: 422
+[   135.1s] candidates_2015_2023_citing_ge1_retracted_at_T0: 218844
+[   150.3s] candidates_2015_2023_cited_by_ge1_retracted_at_T0: 176384
+[   150.3s] saved_tables: ['rw2', 'rw_iid', 'rdeg', 'status']
+done in 150.3 s -> /home/azureuser/d/experiments/d05_match/runs/d05_match_20261101_02

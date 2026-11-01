@@ -1,0 +1,30 @@
+key	doi	status	date	title
+lou2026beyond	10.1515/jdis-2026-0064	OK	2026-11-01	Beyond Retractions: A Topic-Based Analysis of the Impact and Lifespan 
+feng2024molbio	10.1007/s11192-024-05101-4	OK	2026-11-01	Citation network analysis of retractions in molecular biology field
+candal2024references	10.1016/j.jclinepi.2024.111397	OK	2026-11-01	Retracted papers originating from paper mills: a cross-sectional analy
+candal2022papermills	10.1136/bmj-2022-071517	OK	2026-11-01	Retracted papers originating from paper mills: cross sectional study
+cabanac2022pps	10.48550/arXiv.2210.04895	OK	2026-11-01	The 'Problematic Paper Screener' automatically selects suspect publica
+fletcher2025predicting	10.1186/s41073-025-00168-w	OK	2026-11-01	Predicting retracted research: a dataset and machine learning approach
+hsiao2021continued	10.1162/qss_a_00155	OK	2026-11-01	Continued use of retracted papers: Temporal trends in citations and (l
+joseph2026sanecite	10.5281/zenodo.23766253	OK	2026-11-01	SaneCite retraction census: post-retraction citations to 22,553 retrac
+vandervet2016propagation	10.1186/s41073-016-0008-5	OK	2026-11-01	Propagation of errors in citation networks: a study involving the enti
+memon2025widely	10.48550/arXiv.2504.15504	OK	2026-11-01	Are Widely Known Findings Easier to Retract?
+harm2025dynamics	10.48550/arXiv.2501.00473	OK	2026-11-01	Quantifying the Dynamics of Harm Caused by Retracted Research
+schneider2020continued	10.1007/s11192-020-03631-1	OK	2026-11-01	Continued post-retraction citation of a fraudulent clinical trial repo
+teixeira2025citation	10.1002/leap.1667	OK	2026-11-01	The Citation of Retracted Papers and Impact on the Integrity of the Sc
+peng2022attention	10.1073/pnas.2119086119	OK	2026-11-01	Dynamics of cross-platform attention to retracted papers
+stern2014costs	10.7554/eLife.02956	OK	2026-11-01	Financial costs and personal consequences of research misconduct resul
+azoulay2015retractions	10.1162/REST_a_00469	OK	2026-11-01	Retractions
+arjomandi2024dataset	10.13012/B2IDB-5216575_V1	OK	2026-11-01	Parsed Open Citations and PubMed Data
+massari2024meta	10.1162/qss_a_00292	OK	2026-11-01	OpenCitations Meta
+peroni2020opencitations	10.1162/qss_a_00023	OK	2026-11-01	OpenCitations, an infrastructure organization for open scholarship
+heibi2019coci	10.1007/s11192-019-03217-6	OK	2026-11-01	Software review: COCI, the OpenCitations Index of Crossref open DOI-to
+ocmeta2024dump	10.6084/m9.figshare.21747461.v7	OK	2026-11-01	OpenCitations Meta CSV dataset of all bibliographic metadata
+rittman2025rw	10.13003/692016	OK	2026-11-01	Retraction Watch retractions now in the Crossref API
+traag2019leiden	10.1038/s41598-019-41695-z	OK	2026-11-01	From Louvain to Leiden: guaranteeing well-connected communities
+mantel1959	10.1093/jnci/22.4.719	OK (DOI resolves; Crossref BibTeX lacks authors/pages: completed by hand: Mantel & Haenszel, 22(4):719-748; TODO(verify) pages on the OUP page)	2026-11-01	Statistical Aspects of the Analysis of Data From Retrospective Studies of Disease
+robins1986estimator	10.2307/2531052	OK (first DOI 10.2307/2531189 was wrong: not found; corrected via Crossref title search)	2026-11-01	Estimators of the Mantel-Haenszel Variance Consistent in Both Sparse Data and Large-Strata Limiting Models
+wilson1927	10.1080/01621459.1927.10502953	OK	2026-11-01	Probable Inference, the Law of Succession, and Statistical Inference
+saito2015prc	10.1371/journal.pone.0118432	OK	2026-11-01	The Precision-Recall Plot Is More Informative than the ROC Plot When E
+raasveldt2019duckdb	10.1145/3299869.3320212	OK	2026-11-01	DuckDB: an Embeddable Analytical Database
+martinmartin2021coverage	10.1007/s11192-020-03690-4	OK	2026-11-01	Google Scholar, Microsoft Academic, Scopus, Dimensions, Web of Science

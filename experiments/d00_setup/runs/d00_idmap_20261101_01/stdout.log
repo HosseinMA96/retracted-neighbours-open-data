@@ -1,0 +1,19 @@
+[   331.4s] meta_rows: 107067700
+[   331.4s] meta_rows_no_omid: 0
+[   333.9s] meta_distinct_omid: 107067700
+[   334.1s] meta_with_doi: 94599878
+[   334.2s] meta_with_multiple_doi: 207465
+[   334.3s] meta_with_pmid: 26582951
+[   334.4s] meta_with_multiple_pmid: 57011
+[   356.7s] idmap_rows: 121497122
+[   356.8s] idmap_rows_by_type: {'doi': 94851916, 'pmid': 26645206}
+[   357.2s] idmap_rows_with_iid_by_type: {'pmid': 26645206, 'doi': 91631400}
+[   357.7s] distinct_iid_with_pmid: 26582951
+[   359.0s] distinct_iid_with_doi: 91379362
+[   360.2s] pmid_mapping_to_several_iid: 20727
+[   366.8s] doi_mapping_to_several_iid: 2303785
+[   366.8s] pubs_rows: 107030533
+[   371.6s] pubs_omid_not_in_meta: 3474285
+[   372.1s] pmid_iid_by_pub_year_decade: {1790: 1, 1800: 2, 1810: 1, 1820: 1, 1830: 3, 1840: 5, 1850: 7, 1860: 16, 1870: 28, 1880: 330, 1890: 482, 1900: 1237, 1910: 3163, 1920: 7533, 1930: 14349, 1940: 63053, 1950: 284602, 1960: 626509, 1970: 1314555, 1980: 2123000, 1990: 3263019, 2000: 5525907, 2010: 9507062, 2020: 3848034, 2030: 3, 2080: 3, 2100: 8, 2120: 1, None: 37}
+[   372.1s] idmap_parquet: {'path': '/home/azureuser/d/data/work/idmap.parquet', 'bytes': 1281234910}
+done in 372.1 s -> /home/azureuser/d/experiments/d00_setup/runs/d00_idmap_20261101_01

@@ -1,0 +1,1 @@
+Stopped: L-BFGS logistic fit did not converge. Replaced by d08_eval_20261101_02 (Newton).

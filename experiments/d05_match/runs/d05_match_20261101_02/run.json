@@ -1,0 +1,214 @@
+{
+  "run_id": "d05_match_20261101_02",
+  "script": "d05_match.py",
+  "script_sha256": "1644f775e9a3ccad8696924d051b5327086eb0e1b188e58f91cec8376595387b",
+  "config": {
+    "T0": "2024-01-31",
+    "rw": "/home/azureuser/d/data/work/rw_papers_d02_rw_20261101_01.parquet",
+    "idmap": "/home/azureuser/d/data/work/idmap.parquet",
+    "pubmed": "/home/azureuser/d/data/work/pubmed26.parquet",
+    "edges": "/home/azureuser/c/data/work/c6_full_20261031_02/edges.parquet"
+  },
+  "host": "vm-project-c",
+  "python": "3.11.18",
+  "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+  "started_utc": "2026-11-01T06:24:32Z",
+  "results": {
+    "rw_papers": 62735,
+    "rw_pmid_given": 30601,
+    "rw_pmid_filled_from_pubmed_doi": 314,
+    "rw_pmid_given_not_in_pubmed26": 83,
+    "pubmed_flagged_retracted": 30697,
+    "pubmed_flag_breakdown": [
+      [
+        true,
+        false,
+        2
+      ],
+      [
+        true,
+        true,
+        30695
+      ]
+    ],
+    "rw_with_pmid_any": 30915,
+    "rw_with_pmid_any_flagged_in_pubmed": 27456,
+    "rw_with_pmid_any_flagged_by_notice_year": [
+      [
+        2015,
+        832,
+        677
+      ],
+      [
+        2016,
+        974,
+        780
+      ],
+      [
+        2017,
+        828,
+        715
+      ],
+      [
+        2018,
+        906,
+        784
+      ],
+      [
+        2019,
+        982,
+        838
+      ],
+      [
+        2020,
+        1569,
+        1437
+      ],
+      [
+        2021,
+        2187,
+        2082
+      ],
+      [
+        2022,
+        2368,
+        2271
+      ],
+      [
+        2023,
+        7785,
+        7716
+      ],
+      [
+        2024,
+        3533,
+        3453
+      ],
+      [
+        2025,
+        3038,
+        2820
+      ],
+      [
+        2026,
+        1369,
+        118
+      ]
+    ],
+    "pubmed_flagged_not_in_rw": 3205,
+    "rw_matched_by_doi": 51673,
+    "rw_matched_by_pmid": 25208,
+    "rw_matched_any": 52254,
+    "rw_papers_with_several_iids": 893,
+    "iids_shared_by_several_rw_papers": 19,
+    "rw_matched_by_period": [
+      [
+        false,
+        13191,
+        8726
+      ],
+      [
+        true,
+        49544,
+        43528
+      ]
+    ],
+    "retracted_nodes": 53170,
+    "retracted_nodes_out_deg_0": 3333,
+    "retracted_nodes_in_deg_0": 12627,
+    "retracted_nodes_isolated": 292,
+    "retracted_edges_out_in": [
+      1481454,
+      799317
+    ],
+    "biomedical_nodes": 31464435,
+    "biomedical_nodes_via_pmid_only_meta": 26582951,
+    "candidates_2010_2023": 15216941,
+    "candidates_2015_2023": 10786018,
+    "candidates_2015_2023_with_refs": 10519522,
+    "candidates_with_refs_by_year": [
+      [
+        2010,
+        787158,
+        755117
+      ],
+      [
+        2011,
+        831588,
+        800728
+      ],
+      [
+        2012,
+        882434,
+        851479
+      ],
+      [
+        2013,
+        946423,
+        916419
+      ],
+      [
+        2014,
+        983320,
+        953444
+      ],
+      [
+        2015,
+        1021713,
+        993133
+      ],
+      [
+        2016,
+        1053391,
+        1026765
+      ],
+      [
+        2017,
+        1075683,
+        1047685
+      ],
+      [
+        2018,
+        1112611,
+        1059954
+      ],
+      [
+        2019,
+        1174549,
+        1133791
+      ],
+      [
+        2020,
+        1368406,
+        1330793
+      ],
+      [
+        2021,
+        1476813,
+        1449582
+      ],
+      [
+        2022,
+        1456428,
+        1442064
+      ],
+      [
+        2023,
+        1046424,
+        1035755
+      ]
+    ],
+    "positives_2015_2023": 4359,
+    "positives_2015_2023_with_refs": 4325,
+    "positives_2015_2023_paper_mill": 422,
+    "candidates_2015_2023_citing_ge1_retracted_at_T0": 218844,
+    "candidates_2015_2023_cited_by_ge1_retracted_at_T0": 176384,
+    "saved_tables": [
+      "rw2",
+      "rw_iid",
+      "rdeg",
+      "status"
+    ]
+  },
+  "seconds": 150.3
+}

@@ -1,0 +1,5 @@
+[    11.9s] retracted_eligible: 12197
+[    11.9s] matched_pairs: 11788
+[    53.3s] per_paper_all: [{'k': -5, 'control': 1.0892, 'retracted': 1.3817, 'ratio': 1.2685}, {'k': -4, 'control': 1.3342, 'retracted': 1.7272, 'ratio': 1.2945}, {'k': -3, 'control': 1.6142, 'retracted': 2.0954, 'ratio': 1.2981}, {'k': -2, 'control': 2.0171, 'retracted': 2.672, 'ratio': 1.3247}, {'k': -1, 'control': 2.6095, 'retracted': 3.4284, 'ratio': 1.3138}, {'k': 0, 'control': 3.5154, 'retracted': 4.2516, 'ratio': 1.2094}, {'k': 1, 'control': 4.1915, 'retracted': 2.8459, 'ratio': 0.679}, {'k': 2, 'control': 4.1089, 'retracted': 1.9607, 'ratio': 0.4772}]
+[    53.3s] pairs_by_mill: {'False': 11021, 'True': 767}
+done in 53.3 s -> /home/azureuser/d/experiments/d11_event/runs/d11_event_20261101_01

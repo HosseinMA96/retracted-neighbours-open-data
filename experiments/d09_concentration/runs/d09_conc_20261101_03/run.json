@@ -1,0 +1,300 @@
+{
+  "run_id": "d09_conc_20261101_03",
+  "script": "d09_concentration.py",
+  "script_sha256": "c6cdb3c73f33d849e6bec88b79bd08f2ad91d0ac93986ca42e8a1b3ae4e8a930",
+  "config": {
+    "match_run": "d05_match_20261101_02",
+    "nperm": 1000,
+    "leiden": "ModularityVertexPartition, seeds 1,2 in parallel processes, n_iterations=2 (leidenalg default)"
+  },
+  "host": "vm-project-c",
+  "python": "3.11.18",
+  "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+  "started_utc": "2026-11-01T20:47:28Z",
+  "results": {
+    "retracted_with_journal": 28859,
+    "pairs": 27567,
+    "pairs_mill": 5394,
+    "subgraph": {
+      "nodes": 2698556,
+      "edges_induced": 57223086
+    },
+    "seed_agreement": {
+      "ari": 0.4138574210705143,
+      "nmi": 0.569850227914015
+    },
+    "leiden_seed1": {
+      "communities": 197,
+      "modularity": 0.6509670079275621,
+      "largest_community_share": 0.08959124806007361,
+      "all": {
+        "pairs": 27567,
+        "C_ret": 0.06741992979917376,
+        "C_ctrl": 0.058403351375256686,
+        "ratio": 1.1543846065610723,
+        "null_mean": 0.9999793505289299,
+        "null_q975": 1.0149929348647342,
+        "p_perm": 0.000999000999000999
+      },
+      "mill": {
+        "pairs": 5394,
+        "C_ret": 0.12789035290863424,
+        "C_ctrl": 0.07619481072433988,
+        "ratio": 1.6784653927590976,
+        "null_mean": 0.9990425988129769,
+        "null_q975": 1.0563663890586208,
+        "p_perm": 0.000999000999000999
+      },
+      "nonmill": {
+        "pairs": 22173,
+        "C_ret": 0.06097166907828969,
+        "C_ctrl": 0.05736601240940943,
+        "ratio": 1.0628535350016564,
+        "null_mean": 0.9999779648350829,
+        "null_q975": 1.0149050568738718,
+        "p_perm": 0.000999000999000999
+      },
+      "top20_by_retracted": [
+        {
+          "size": 211246,
+          "retracted": 4200,
+          "controls": 2357
+        },
+        {
+          "size": 113779,
+          "retracted": 2254,
+          "controls": 2028
+        },
+        {
+          "size": 240674,
+          "retracted": 2252,
+          "controls": 2141
+        },
+        {
+          "size": 241767,
+          "retracted": 2133,
+          "controls": 2768
+        },
+        {
+          "size": 190015,
+          "retracted": 1808,
+          "controls": 1987
+        },
+        {
+          "size": 199350,
+          "retracted": 1452,
+          "controls": 1438
+        },
+        {
+          "size": 107721,
+          "retracted": 1391,
+          "controls": 1344
+        },
+        {
+          "size": 178589,
+          "retracted": 1315,
+          "controls": 1687
+        },
+        {
+          "size": 143127,
+          "retracted": 1281,
+          "controls": 1187
+        },
+        {
+          "size": 158874,
+          "retracted": 1262,
+          "controls": 1513
+        },
+        {
+          "size": 157932,
+          "retracted": 1188,
+          "controls": 1535
+        },
+        {
+          "size": 126910,
+          "retracted": 1179,
+          "controls": 1061
+        },
+        {
+          "size": 68409,
+          "retracted": 1123,
+          "controls": 900
+        },
+        {
+          "size": 93612,
+          "retracted": 756,
+          "controls": 1012
+        },
+        {
+          "size": 58503,
+          "retracted": 756,
+          "controls": 743
+        },
+        {
+          "size": 69612,
+          "retracted": 660,
+          "controls": 928
+        },
+        {
+          "size": 97374,
+          "retracted": 587,
+          "controls": 699
+        },
+        {
+          "size": 66310,
+          "retracted": 542,
+          "controls": 591
+        },
+        {
+          "size": 81032,
+          "retracted": 453,
+          "controls": 609
+        },
+        {
+          "size": 21513,
+          "retracted": 267,
+          "controls": 278
+        }
+      ],
+      "share_of_retracted_in_top20": 0.9743171182936119,
+      "share_of_controls_in_top20_ret": 0.9723945296912976
+    },
+    "leiden_seed2": {
+      "communities": 200,
+      "modularity": 0.6573557342050307,
+      "largest_community_share": 0.09001999587927766,
+      "all": {
+        "pairs": 27567,
+        "C_ret": 0.06409888906299484,
+        "C_ctrl": 0.057852431195347456,
+        "ratio": 1.107972262160518,
+        "null_mean": 1.0002950054898223,
+        "null_q975": 1.011656201962179,
+        "p_perm": 0.000999000999000999
+      },
+      "mill": {
+        "pairs": 5394,
+        "C_ret": 0.11976647998318349,
+        "C_ctrl": 0.07905692877005706,
+        "ratio": 1.5149397003712752,
+        "null_mean": 0.999311250619269,
+        "null_q975": 1.0491806691921748,
+        "p_perm": 0.000999000999000999
+      },
+      "nonmill": {
+        "pairs": 22173,
+        "C_ret": 0.05908357136886913,
+        "C_ctrl": 0.05613419721164586,
+        "ratio": 1.0525414863617464,
+        "null_mean": 1.0006190522966518,
+        "null_q975": 1.012231989384881,
+        "p_perm": 0.000999000999000999
+      },
+      "top20_by_retracted": [
+        {
+          "size": 122794,
+          "retracted": 3429,
+          "controls": 1355
+        },
+        {
+          "size": 171456,
+          "retracted": 2698,
+          "controls": 2773
+        },
+        {
+          "size": 187706,
+          "retracted": 2027,
+          "controls": 1730
+        },
+        {
+          "size": 242924,
+          "retracted": 1918,
+          "controls": 1946
+        },
+        {
+          "size": 207415,
+          "retracted": 1850,
+          "controls": 2126
+        },
+        {
+          "size": 200534,
+          "retracted": 1808,
+          "controls": 1995
+        },
+        {
+          "size": 104858,
+          "retracted": 1678,
+          "controls": 1449
+        },
+        {
+          "size": 163024,
+          "retracted": 1377,
+          "controls": 1373
+        },
+        {
+          "size": 154731,
+          "retracted": 1369,
+          "controls": 1450
+        },
+        {
+          "size": 136792,
+          "retracted": 1341,
+          "controls": 1856
+        },
+        {
+          "size": 202573,
+          "retracted": 1271,
+          "controls": 1668
+        },
+        {
+          "size": 156078,
+          "retracted": 1205,
+          "controls": 1427
+        },
+        {
+          "size": 110575,
+          "retracted": 1128,
+          "controls": 1145
+        },
+        {
+          "size": 57161,
+          "retracted": 756,
+          "controls": 732
+        },
+        {
+          "size": 115344,
+          "retracted": 660,
+          "controls": 1039
+        },
+        {
+          "size": 90678,
+          "retracted": 641,
+          "controls": 735
+        },
+        {
+          "size": 55227,
+          "retracted": 575,
+          "controls": 596
+        },
+        {
+          "size": 69110,
+          "retracted": 550,
+          "controls": 700
+        },
+        {
+          "size": 66023,
+          "retracted": 515,
+          "controls": 526
+        },
+        {
+          "size": 36399,
+          "retracted": 336,
+          "controls": 360
+        }
+      ],
+      "share_of_retracted_in_top20": 0.9842202633583632,
+      "share_of_controls_in_top20_ret": 0.9787426996045997
+    }
+  },
+  "seconds": 1177.4
+}

@@ -1,0 +1,90 @@
+% Methods and data. Numbers: ../FINDINGS.md.
+\section{Data}\label{sec:data}
+
+\paragraph{Citation graph.} Citations come from the parsed OpenCitations snapshot of January 2024 released through
+the Illinois Data Bank \citep{arjomandi2024dataset}, built from the OpenCitations Index \citep{peroni2020opencitations,heibi2019coci}.
+It holds 1,962,840,983 citation links between 107,030,533 bibliographic resources. Identifiers (DOI, PMID) and journals
+were taken from the OpenCitations Meta dump \citep{massari2024meta,ocmeta2024dump}: 26,582,951 graph nodes carry a PMID
+and 91,379,362 a DOI. Counting records and citing links by publication month shows that the snapshot is essentially
+complete up to September 2023: 240,000--300,000 records and 8.7--10.3 million citing links per month from January to
+September 2023, then 58,434 records and 2.4 million links in October and fewer afterwards.
+
+\paragraph{Retractions.} Retraction labels come from the Retraction Watch database distributed by Crossref
+\citep{rittman2025rw}. One copy was frozen for the whole study (repository commit of 30 October 2026, 73,519 records).
+Only records whose nature is \emph{Retraction} are used; expressions of concern and corrections are ignored. Records
+were grouped into papers by DOI, or by PMID when no DOI is given, keeping the earliest retraction notice. This gives
+62,735 retracted papers. A paper is labelled \emph{paper mill} when any of its Retraction Watch reasons contains ``Paper
+Mill'' (11,716 papers).
+
+\paragraph{PubMed.} The 2026 PubMed baseline (39,994,988 records) supplies PMID--DOI links, the PubMed retraction flags
+and grant agencies. A paper is \emph{NIH-funded} when one of its grants lists an agency containing ``NIH''
+(3,341,220 records). A graph node is \emph{biomedical} when it has a PMID in OpenCitations Meta or its DOI appears in
+PubMed (31,464,435 nodes).
+
+\paragraph{Matching.} Retraction Watch papers were matched to graph nodes by DOI and by PMID. Of the 62,735 retracted
+papers, 52,254 (83.3\%) match at least one node. Among Retraction Watch papers with a PMID, 88.8\% are also flagged as
+retracted in PubMed; Retraction Watch is used as the single label source and PubMed as a check. In a random sample of 300 DOI-matched papers,
+the Retraction Watch and OpenCitations titles agreed for all 292 papers that had a title in OpenCitations Meta
+(differences were retraction prefixes such as ``Notice of Retraction'' or truncation).
+
+\section{Methods}\label{sec:methods}
+
+\subsection{Design}
+The test is prospective in the sense that matters for a screening tool: all predictors use only information available
+at a fixed time point $T_0$, and outcomes are retractions issued after $T_0$. The main time point is
+$T_0 = $ 31 January 2024. Only 116,123 citing links in the graph (0.006\%) carry a publication date after January 2024,
+so post-$T_0$ information can enter the predictors only negligibly. Because the graph is complete only to about September 2023, every analysis was
+repeated with $T_0' = $ 30 September 2023. The design, scores, metrics and decision rule were pre-registered in a
+file whose SHA-256 hash was recorded before any score was computed; the analysis code checks the hashes of the frozen
+score files before reading any outcome.
+
+\paragraph{Candidates and outcome.} Candidates are biomedical nodes published 2015--2023 that have a journal, at least
+one reference in the graph, and no retraction notice dated on or before $T_0$ (10,495,850 papers). A candidate is
+\emph{positive} if its first retraction notice falls between $T_0$ and 30 October 2026. Let $R_0$ denote the 44,401
+graph nodes retracted on or before $T_0$.
+
+\paragraph{Scores.} For a candidate $p$ with $d(p)$ references in the graph:
+$S_1(p)$ is the number of references of $p$ that are in $R_0$;
+$S_2(p) = S_1(p)/d(p)$;
+$S_3(p)$ is the number of citations $p$ received from papers in $R_0$; and
+$S_4(p)$ is the number of references of $p$ to paper-mill retractions in $R_0$.
+The journal baseline is a smoothed retraction rate,
+\[
+B(p) = \frac{r_j + m\,g}{n_j + m},
+\]
+where $j$ is the journal of $p$, $n_j$ is the number of biomedical items in $j$ published from 2010 to 2023,
+$r_j$ is the number of those in $R_0$, $g$ is the overall rate $\sum_j r_j / \sum_j n_j$, and $m = 100$.
+
+\subsection{Analyses}
+\paragraph{Association.} Positive rates with Wilson intervals \citep{wilson1927} are reported by $S_1$ level, and risk
+ratios for $S_1 \ge 1$, $S_3 \ge 1$ and $S_4 \ge 1$.
+
+\paragraph{Within journal (primary test).} Retractions cluster by journal and publication year, for example in
+mass retractions of special issues. To separate the neighbourhood signal from these clusters, the Mantel--Haenszel odds
+ratio \citep{mantel1959} of exposure ($S_1 \ge 1$) on outcome was computed with strata defined by journal $\times$
+publication year, with the Robins--Breslow--Greenland confidence interval \citep{robins1986estimator}. The
+pre-registered decision rule was that the signal holds within journal if the 95\% interval lies above 1.
+
+\paragraph{Screening value.} Candidates were ranked by (i) $S_1$, with ties broken by $S_2$ and then at random;
+(ii) the journal baseline $B$; and (iii) a logistic model with $\operatorname{logit} B$, $\log(1+S_1)$,
+$\log(1+S_3)$, an indicator of $S_1 \ge 1$ and indicators of age at the time point. The model was fitted only on an
+earlier window (predictors at 31 December 2021; outcomes up to $T_0$; candidates published 2013--2021) and applied
+unchanged. Precision at $k$, lift (precision divided by the base rate), recall and average precision
+\citep{saito2015prc} are reported with 95\% intervals from 1,000 Poisson bootstrap resamples of the candidates.
+
+\paragraph{Sensitivity analyses.} The analyses were repeated (a) for candidates published 2015--2022, (b) without
+nodes whose DOI maps to more than one graph node, and (c) with $T_0'$.
+
+\paragraph{Supporting analyses.} Three descriptive analyses complement the test. (1) \emph{Community concentration}:
+each retracted biomedical paper with a journal was matched to one non-retracted paper from the same journal and
+publication year, chosen by a fixed hash of its identifier; communities were found with the Leiden algorithm \citep{traag2019leiden} (modularity, two iterations, seeds 1
+and 2) on the subgraph formed by
+these papers and their neighbours, and the concentration of retracted papers over communities was compared with that
+of the controls under a permutation null that swaps labels within pairs. (2) \emph{NIH exposure}: the share of
+biomedical papers published 2000--2023 that cite a paper in a year after its retraction, for NIH-funded and other
+papers, with a Mantel--Haenszel odds ratio stratified by journal and year. (3) \emph{Citations around retraction}:
+citations per paper by year relative to the retraction year, for papers retracted 2000--2021 and matched controls.
+
+\paragraph{Implementation.} All joins and aggregations run in DuckDB \citep{raasveldt2019duckdb} on one 8-core, 64 GB
+cloud machine. Every run writes its configuration, the hash of its script, its counts and checksums; per-paper scores
+are never released.

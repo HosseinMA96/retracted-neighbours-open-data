@@ -1,0 +1,18 @@
+[  1915.2s] files_parsed_now: 1334
+[  1915.2s] articles_parsed_now: 39994988
+[  1915.2s] delete_citations: 0
+[  1954.5s] rows_all_files: 39994988
+[  1954.5s] distinct_pmid: 39994988
+[  1954.8s] with_doi: 31080408
+[  1956.1s] duplicate_doi_values: 11151
+[  1956.2s] with_year: 39994076
+[  1956.5s] pubtype_retracted_publication_D016441: 30697
+[  1956.8s] pubtype_retraction_of_publication_D016440: 29990
+[  1957.0s] cc_reftype_counts: {'RetractionIn': 30861, 'ErratumFor': 195668, 'ExpressionOfConcernIn': 3798, 'ExpressionOfConcernFor': 3801, 'ErratumIn': 337002, 'RetractionOf': 30305}
+[  1957.1s] with_retractionin: 30695
+[  1957.4s] with_any_grant: 5387901
+[  1957.8s] with_nih_agency: 3341220
+[  1958.2s] top_agencies: [('NCI NIH HHS', 1352584), ('NHLBI NIH HHS', 1084323), ('NIGMS NIH HHS', 879167), ('NIAID NIH HHS', 774814), ('NIDDK NIH HHS', 664250), ('NIA NIH HHS', 545728), ('NINDS NIH HHS', 515945), ('NIMH NIH HHS', 474800), ('NICHD NIH HHS', 411910), ('National Natural Science Foundation of China', 378069), ('Medical Research Council', 338815), ('NCRR NIH HHS', 329032), ('NIDA NIH HHS', 312192), ('Wellcome Trust', 248406), ('NEI NIH HHS', 235664), ('NCATS NIH HHS', 210700), ('NIEHS NIH HHS', 201340), ('NIAMS NIH HHS', 198660), ('NIH HHS', 197001), ('NIAAA NIH HHS', 147626), ('NIBIB NIH HHS', 113530), ('PHS HHS', 108755), ('NIDCR NIH HHS', 107917), ('Intramural NIH HHS', 107571), ('NIDCD NIH HHS', 104316), ('Biotechnology and Biological Sciences Research Council', 92059), ('NHGRI NIH HHS', 76171), ('CIHR', 69878), ('NIADDK NIH HHS', 69815), ('Cancer Research UK', 68467), ('Department of Health', 56261), ('British Heart Foundation', 52297), ('Canadian Institutes of Health Research', 48182), ('Japan Society for the Promotion of Science', 47157), ('NIMHD NIH HHS', 44038), ('FIC NIH HHS', 42165), ('National Research Foundation of Korea', 40205), ('National Natural Science Foundation of China (National Science Foundation of China)', 39131), ('AHRQ HHS', 38667), ('NINR NIH HHS', 37016)]
+[  1958.4s] rows_by_year_decade: {1800: 3064, 1810: 2731, 1820: 3376, 1830: 4084, 1840: 13213, 1850: 15704, 1860: 15627, 1870: 24431, 1880: 36435, 1890: 45199, 1900: 43383, 1910: 49855, 1920: 50952, 1930: 55846, 1940: 296855, 1950: 1059203, 1960: 1634225, 1970: 2458596, 1980: 3331309, 1990: 4440369, 2000: 6428357, 2010: 10415603, 2020: 9565659, None: 912}
+[  1958.4s] output: {'path': '/home/azureuser/d/data/work/pubmed26.parquet', 'bytes': 1851509362}
+done in 1958.4 s -> /home/azureuser/d/experiments/d04_pubmed/runs/d04_pubmed_20261101_01

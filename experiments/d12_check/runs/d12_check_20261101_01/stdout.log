@@ -1,0 +1,9 @@
+[   291.5s] sample: 300
+[   291.5s] meta_title_found: 292
+[   291.5s] rw_title_found: 300
+[   291.5s] classes: {'same': 270, 'check': 21, 'suspect': 9}
+[   298.8s] pubmed_only_flagged: 3205
+[   298.8s] pubmed_only_with_doi: 3156
+[   298.9s] pubmed_only_notice_year: [(1981, 1), (1985, 2), (1990, 1), (1992, 2), (1994, 1), (1997, 1), (1998, 1), (1999, 1), (2001, 1), (2002, 2), (2003, 2), (2004, 4), (2005, 3), (2007, 1), (2008, 3), (2009, 6), (2010, 2), (2011, 13), (2012, 8), (2013, 3), (2014, 6), (2015, 10), (2016, 14), (2017, 10), (2018, 19), (2019, 30), (2020, 26), (2021, 33), (2022, 53), (2023, 116), (2024, 561), (2025, 1582), (2026, 222)]
+[   298.9s] pubmed_only_top_journals: [('Int Wound J', 159), ('Eur Rev Med Pharmacol Sci', 63), ('Oncol Res', 62), ('Comput Intell Neurosci', 52), ('J Int Med Res', 47), ('Med Sci Monit', 43), ('RSC Adv', 35), ('J Cell Biochem', 35), ('J Cell Physiol', 33), ('Bioengineered', 32)]
+done in 298.9 s -> /home/azureuser/d/experiments/d12_check/runs/d12_check_20261101_01

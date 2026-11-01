@@ -1,0 +1,11 @@
+[    12.4s] biomedical_papers_2000_2023: 21463892
+[    12.4s] nih_funded_2000_2023: 2332727
+[    35.5s] post_retraction_citations: 114166
+[    35.5s] post_retraction_citations_from_nih: 12068
+[    35.5s] retracted_papers_cited_after_retraction: 13138
+[    35.5s] retracted_papers_cited_after_retraction_by_nih: 3548
+[    35.9s] overall_by_nih: [{'nih': False, 'n': 19105448, 'k': 92477, 'k_mill': 2971, 'share': 0.004840347109369014}, {'nih': True, 'n': 2330897, 'k': 10872, 'k_mill': 71, 'share': 0.004664298765668325}]
+[    35.9s] by_nih_2015_2023: [{'nih': False, 'n': 9749073, 'k': 69247, 'share': 0.007102931735150614}, {'nih': True, 'n': 1025717, 'k': 6427, 'share': 0.006265860856357065}]
+[    35.9s] by_nih_2020_2023: [{'nih': False, 'n': 4879997, 'k': 40025, 'share': 0.008201849304415556}, {'nih': True, 'n': 458959, 'k': 3043, 'share': 0.006630221871670454}]
+[    36.3s] mh_or_nih_on_postretraction_citing_within_journal_year: {'or': np.float64(1.0267376605813132), 'lo': np.float64(1.00402991549685), 'hi': np.float64(1.049958977700695), 'strata_informative': 32343}
+done in 36.3 s -> /home/azureuser/d/experiments/d10_nih/runs/d10_nih_20261101_01
