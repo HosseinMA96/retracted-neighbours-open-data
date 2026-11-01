@@ -1,6 +1,6 @@
 # Retracted neighbours and future retractions: code, pre-registration and run records
 
-Companion repository (https://github.com/HosseinMA96/retracted-neighbours-open-data) to the paper
+Companion repository to the paper
 
 > Hossein Mohasel Arjomandi. *Do links to retracted papers predict future retractions? An out-of-sample test on the
 > open biomedical citation graph.* Manuscript submitted for publication.
