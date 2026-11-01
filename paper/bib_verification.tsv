@@ -22,9 +22,12 @@ heibi2019coci	10.1007/s11192-019-03217-6	OK	2026-11-01	Software review: COCI, th
 ocmeta2024dump	10.6084/m9.figshare.21747461.v7	OK	2026-11-01	OpenCitations Meta CSV dataset of all bibliographic metadata
 rittman2025rw	10.13003/692016	OK	2026-11-01	Retraction Watch retractions now in the Crossref API
 traag2019leiden	10.1038/s41598-019-41695-z	OK	2026-11-01	From Louvain to Leiden: guaranteeing well-connected communities
-mantel1959	10.1093/jnci/22.4.719	OK (DOI resolves; Crossref BibTeX lacks authors/pages: completed by hand: Mantel & Haenszel, 22(4):719-748; TODO(verify) pages on the OUP page)	2026-11-01	Statistical Aspects of the Analysis of Data From Retrospective Studies of Disease
+mantel1959	10.1093/jnci/22.4.719	OK (DOI resolves; Crossref BibTeX lacks authors/pages: completed by hand; authors, 22(4):719-48, 1959 confirmed in PubMed PMID 13655060 on 2026-11-01)	2026-11-01	Statistical Aspects of the Analysis of Data From Retrospective Studies of Disease
 robins1986estimator	10.2307/2531052	OK (first DOI 10.2307/2531189 was wrong: not found; corrected via Crossref title search)	2026-11-01	Estimators of the Mantel-Haenszel Variance Consistent in Both Sparse Data and Large-Strata Limiting Models
 wilson1927	10.1080/01621459.1927.10502953	OK	2026-11-01	Probable Inference, the Law of Succession, and Statistical Inference
 saito2015prc	10.1371/journal.pone.0118432	OK	2026-11-01	The Precision-Recall Plot Is More Informative than the ROC Plot When E
 raasveldt2019duckdb	10.1145/3299869.3320212	OK	2026-11-01	DuckDB: an Embeddable Analytical Database
 martinmartin2021coverage	10.1007/s11192-020-03690-4	OK	2026-11-01	Google Scholar, Microsoft Academic, Scopus, Dimensions, Web of Science
+cabanac2024chain	10.1038/d41586-024-02747-1	OK (open PDF read 2026-11-01: Feet of Clay Detector definition)	2026-11-01	Chain retraction: how to stop bad science propagating through the literature
+peterson2025nih	10.1080/15424065.2025.2582838	OK (Crossref; title only read)	2026-11-01	Retraction Notices from NIH Funded Studies: Insights and Lessons
+salisbury2026nih	10.1080/0194262X.2026.2656747	OK (Crossref; title only read)	2026-11-01	Characteristics of Publication Retractions of National Institutes of Health and National Science Foundation Funded Research

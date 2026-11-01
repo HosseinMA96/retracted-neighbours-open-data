@@ -1,29 +1,35 @@
 % Related work. All references verified (bib_verification.tsv).
 \section{Related work}\label{sec:related}
 
-\paragraph{Citation of retracted papers.} Retracted papers continue to be cited after retraction, often without
-acknowledging it \citep{hsiao2021continued,schneider2020continued}; see \citet{teixeira2025citation} for a review. Attention to
-retracted papers and its decline after retraction have been measured across platforms \citep{peng2022attention} and
-related to how widely known a finding was \citep{memon2025widely}. Large open resources now document post-retraction
+\paragraph{Citation of retracted papers.} Retracted papers continue to be cited after retraction, mostly without
+acknowledging it: only 5.4\% of post-retraction citation contexts in PubMed Central articles mention the retraction
+\citep{hsiao2021continued}, and 96\% of the analysed post-retraction citations of one fraudulent trial report did not
+\citep{schneider2020continued}; see also \citet{teixeira2025citation}. Retracted papers draw more online attention than
+comparable papers, and retraction does little to reduce it \citep{peng2022attention}; highly cited papers, however,
+lose more citations after retraction \citep{memon2025widely}. Large open resources now document post-retraction
 citations in biomedicine, including citation contexts \citep{hsiao2021continued,joseph2026sanecite}. Case studies
 traced how far a single retracted result spreads through direct and indirect citations
-\citep{vandervet2016propagation}, and harm has been quantified by citation distance from retracted work
-\citep{harm2025dynamics}.
+\citep{vandervet2016propagation}, and harm has been quantified by citation distance, with indirectly citing papers
+affected more than direct ones \citep{harm2025dynamics}.
 
-\paragraph{Retractions in citation networks.} In molecular biology, retracted papers form citation communities with
-high self-citation \citep{feng2024molbio}. Paper-mill retractions reference and are cited by other later-retracted
-papers \citep{candal2024references}. Across Web of Science, retractions cluster in citation networks, and citing
-retracted works is associated with higher subsequent retraction rates \citep{lou2026beyond}. These studies are
-retrospective and do not separate the network signal from journal-level clustering.
+\paragraph{Retractions in citation networks.} In molecular biology, the citation network of retracted papers has clear
+communities, several with very high self-citation, and retracted papers and the papers citing them tend to share
+retraction reasons \citep{feng2024molbio}. Of 416 paper-mill papers retracted in 2022, about 42\% cited, or were cited
+by, at least one other retracted paper, mostly also from paper mills \citep{candal2024references}. Across Web of
+Science, retractions cluster in citation networks, and citing retracted works is associated with higher subsequent
+retraction rates \citep{lou2026beyond}. These are observational analyses of past data; none of them tests the signal
+prospectively.
 
 \paragraph{Predicting retraction.} Classifiers trained on titles, abstracts and metadata reach accuracies around 0.6--0.7
-on balanced samples, with a random split \citep{fletcher2025predicting}. The Problematic Paper Screener flags papers
-that cite retracted work for reassessment \citep{cabanac2022pps}; how well such flags anticipate later retractions has
-not been reported.
+on balanced samples, with a random split \citep{fletcher2025predicting}. The Feet of Clay Detector flags papers that
+cite retracted work for reassessment \citep{cabanac2024chain}; to my knowledge, how often flagged papers are later
+retracted has not been reported.
 
-\paragraph{Funding.} Misconduct-related retractions of NIH-funded papers carry direct costs \citep{stern2014costs}, and
-retractions are followed by less funding and fewer citations in the affected fields \citep{azoulay2015retractions}.
-How often NIH-funded papers themselves cite retracted work has not, to my knowledge, been measured.
+\paragraph{Funding.} Papers retracted for misconduct accounted for about \$58 million of direct NIH funding
+between 1992 and 2012 \citep{stern2014costs}. After a retraction, related articles lose 5--10\% of their citations and
+new articles and funding flow less into the field \citep{azoulay2015retractions}. Recent studies describe the
+retractions of NIH- and NSF-funded papers themselves \citep{peterson2025nih,salisbury2026nih}. How often NIH-funded
+papers cite work that has already been retracted has not, to my knowledge, been measured.
 
 \paragraph{Open citation data.} OpenCitations provides open citation links and metadata
 \citep{peroni2020opencitations,heibi2019coci,massari2024meta}; its coverage differs from commercial indexes

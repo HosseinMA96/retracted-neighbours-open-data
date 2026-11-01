@@ -5,17 +5,19 @@ Retractions have become far more frequent. In the Retraction Watch database, 13,
 notice dated 2023, more than in any earlier year, and papers retracted for paper-mill reasons rose from 246 in 2020 to
 6,782 in 2023
 \citep{rittman2025rw,candal2022papermills}. Because retractions are slow, often years after publication, editors and integrity
-teams look for early signals. One signal is already in use: the ``Feet of Clay'' detector of the Problematic Paper
-Screener flags articles whose reference lists include retracted papers \citep{cabanac2022pps}. Network studies support
-the idea. Retracted papers cluster in citation networks \citep{feng2024molbio,candal2024references}, and in a
-retrospective analysis of more than 50,000 Web of Science retractions, articles citing retracted works had
-substantially higher subsequent retraction rates \citep{lou2026beyond}.
+teams look for early signals. One signal is already in use: the ``Feet of Clay'' Detector of the Problematic Paper
+Screener \citep{cabanac2022pps} spots articles whose reference lists cite retracted, withdrawn or removed papers, and
+its author has posted comments on more than 1,700 such articles to prompt readers to reassess them
+\citep{cabanac2024chain}. Network studies support the idea. Retracted papers cluster in citation networks
+\citep{feng2024molbio,candal2024references}, and in an observational analysis of more than 50,000 Web of Science
+retractions, articles citing retracted works had substantially higher subsequent retraction rates
+\citep{lou2026beyond}.
 
-That association has not been tested in the way a screening tool is used: with information frozen at one moment and
+To my knowledge, that association has not been tested in the way a screening tool is used: with information frozen at one moment and
 outcomes observed afterwards. A retrospective association can also arise from journals alone. Retractions arrive in
 waves within journals and special issues, and papers in the same venue cite one another, so a paper that cites a
-retracted paper may simply sit in a journal that is being cleaned up. Machine-learning studies of retraction
-prediction so far have used text and metadata, not citation links, and random rather than temporal splits
+retracted paper may simply sit in a journal that is being cleaned up. A recent machine-learning study of
+retraction prediction used text and metadata but no citation links, and a random rather than temporal split
 \citep{fletcher2025predicting}.
 
 This article tests the signal prospectively on open data. All predictors are computed on the January 2024
