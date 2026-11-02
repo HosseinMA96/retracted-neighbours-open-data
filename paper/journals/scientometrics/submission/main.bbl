@@ -1,0 +1,219 @@
+\begin{thebibliography}{33}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{\url{https://doi.org/#1}}
+\providecommand{\eprint}[2][]{\url{#2}}
+ \bibcommenthead
+
+\bibitem[{Azoulay et~al.(2015)Azoulay, Furman, Krieger, and
+  Murray}]{azoulay2015retractions}
+Azoulay P, Furman JL, Krieger JL, et~al (2015) Retractions. Review of Economics
+  and Statistics 97(5):1118--1136. \doi{10.1162/rest_a_00469},
+  \urlprefix\url{http://dx.doi.org/10.1162/REST_a_00469}
+
+\bibitem[{Cabanac(2024)}]{cabanac2024chain}
+Cabanac G (2024) Chain retraction: how to stop bad science propagating through
+  the literature. Nature 632(8027):977--979. \doi{10.1038/d41586-024-02747-1},
+  \urlprefix\url{http://dx.doi.org/10.1038/d41586-024-02747-1}
+
+\bibitem[{Cabanac et~al.(2022)Cabanac, Labb{\'e}, and
+  Magazinov}]{cabanac2022pps}
+Cabanac G, Labb{\'e} C, Magazinov A (2022) The '{Problematic Paper Screener}'
+  automatically selects suspect publications for post-publication
+  (re)assessment. \doi{10.48550/ARXIV.2210.04895},
+  \urlprefix\url{https://arxiv.org/abs/2210.04895}
+
+\bibitem[{Candal-Pedreira et~al.(2022)Candal-Pedreira, Ross, Ruano-Ravina,
+  Egilman, Fern{\'a}ndez, and P{\'e}rez-R{\'i}os}]{candal2022papermills}
+Candal-Pedreira C, Ross JS, Ruano-Ravina A, et~al (2022) Retracted papers
+  originating from paper mills: cross sectional study. BMJ 379:e071517.
+  \doi{10.1136/bmj-2022-071517},
+  \urlprefix\url{http://dx.doi.org/10.1136/bmj-2022-071517}
+
+\bibitem[{Candal-Pedreira et~al.(2024)Candal-Pedreira, Guerra-Tort,
+  Ruano-Ravina, Freijedo-Farinas, Rey-Brandariz, Ross, and
+  P{\'e}rez-R{\'i}os}]{candal2024references}
+Candal-Pedreira C, Guerra-Tort C, Ruano-Ravina A, et~al (2024) Retracted papers
+  originating from paper mills: a cross-sectional analysis of references and
+  citations. Journal of Clinical Epidemiology 172:111397.
+  \doi{10.1016/j.jclinepi.2024.111397},
+  \urlprefix\url{http://dx.doi.org/10.1016/j.jclinepi.2024.111397}
+
+\bibitem[{Feng et~al.(2024)Feng, Feng, Han, Zhang, Ren, Wang, and
+  Yuan}]{feng2024molbio}
+Feng S, Feng L, Han F, et~al (2024) Citation network analysis of retractions in
+  molecular biology field. Scientometrics \doi{10.1007/s11192-024-05101-4},
+  \urlprefix\url{http://dx.doi.org/10.1007/s11192-024-05101-4}
+
+\bibitem[{Fletcher and Stevenson(2025)}]{fletcher2025predicting}
+Fletcher AHA, Stevenson M (2025) Predicting retracted research: a dataset and
+  machine learning approaches. Research Integrity and Peer Review 10(1).
+  \doi{10.1186/s41073-025-00168-w},
+  \urlprefix\url{http://dx.doi.org/10.1186/s41073-025-00168-w}
+
+\bibitem[{Heibi et~al.(2019)Heibi, Peroni, and Shotton}]{heibi2019coci}
+Heibi I, Peroni S, Shotton D (2019) Software review: {COCI}, the
+  {OpenCitations} index of {Crossref} open {DOI}-to-{DOI} citations.
+  Scientometrics 121(2):1213--1228. \doi{10.1007/s11192-019-03217-6},
+  \urlprefix\url{http://dx.doi.org/10.1007/s11192-019-03217-6}
+
+\bibitem[{Hsiao and Schneider(2021)}]{hsiao2021continued}
+Hsiao TK, Schneider J (2021) Continued use of retracted papers: Temporal trends
+  in citations and (lack of) awareness of retractions shown in citation
+  contexts in biomedicine. Quantitative Science Studies 2(4):1144--1169.
+  \doi{10.1162/qss_a_00155},
+  \urlprefix\url{http://dx.doi.org/10.1162/qss_a_00155}
+
+\bibitem[{Huang et~al.(2025)Huang, Zhao, Cui, Yang, Xia, Liang, Liu, Ma, Tang,
+  Hao, Zhang, Gao, and Zhan}]{harm2025dynamics}
+Huang Y, Zhao J, Cui D, et~al (2025) Quantifying the dynamics of harm caused by
+  retracted research. \doi{10.48550/ARXIV.2501.00473},
+  \urlprefix\url{https://arxiv.org/abs/2501.00473}
+
+\bibitem[{Joseph(2026)}]{joseph2026sanecite}
+Joseph S (2026) {SaneCite} retraction census: post-retraction citations to
+  22,553 retracted biomedical papers (protocol, code and data).
+  \doi{10.5281/ZENODO.23766253},
+  \urlprefix\url{https://zenodo.org/doi/10.5281/zenodo.23766253}
+
+\bibitem[{Lou et~al.(2026)Lou, Zhou, and Li}]{lou2026beyond}
+Lou Y, Zhou Z, Li M (2026) Beyond retractions: A topic-based analysis of the
+  impact and lifespan of retracted papers. Journal of Data and Information
+  Science \doi{10.1515/jdis-2026-0064},
+  \urlprefix\url{http://dx.doi.org/10.1515/jdis-2026-0064}
+
+\bibitem[{Mantel and Haenszel(1959)}]{mantel1959}
+Mantel N, Haenszel W (1959) Statistical aspects of the analysis of data from
+  retrospective studies of disease. JNCI: Journal of the National Cancer
+  Institute 22(4):719--748. \doi{10.1093/jnci/22.4.719}
+
+\bibitem[{Mart{\'i}n-Mart{\'i}n et~al.(2020)Mart{\'i}n-Mart{\'i}n, Thelwall,
+  Orduna-Malea, and Delgado L{\'o}pez-C{\'o}zar}]{martinmartin2021coverage}
+Mart{\'i}n-Mart{\'i}n A, Thelwall M, Orduna-Malea E, et~al (2020) {Google
+  Scholar}, {Microsoft Academic}, {Scopus}, {Dimensions}, {Web of Science}, and
+  {OpenCitations}' {COCI}: a multidisciplinary comparison of coverage via
+  citations. Scientometrics 126(1):871--906. \doi{10.1007/s11192-020-03690-4},
+  \urlprefix\url{http://dx.doi.org/10.1007/s11192-020-03690-4}
+
+\bibitem[{Massari et~al.(2024)Massari, Mariani, Heibi, Peroni, and
+  Shotton}]{massari2024meta}
+Massari A, Mariani F, Heibi I, et~al (2024) {OpenCitations} {Meta}.
+  Quantitative Science Studies 5(1):50--75. \doi{10.1162/qss_a_00292},
+  \urlprefix\url{http://dx.doi.org/10.1162/qss_a_00292}
+
+\bibitem[{Memon et~al.(2025)Memon, West, and O'Connor}]{memon2025widely}
+Memon SA, West JD, O'Connor C (2025) Are widely known findings easier to
+  retract? \doi{10.48550/ARXIV.2504.15504},
+  \urlprefix\url{https://arxiv.org/abs/2504.15504}
+
+\bibitem[{Mohasel~Arjomandi(2026)}]{arjomandi2026retracteddata}
+Mohasel~Arjomandi H (2026) Retracted papers and their open citation
+  neighbourhoods: {Retraction Watch} labels linked to the {OpenCitations} graph
+  (january 2024). \doi{10.5281/ZENODO.23874477},
+  \urlprefix\url{https://zenodo.org/doi/10.5281/zenodo.23874477}
+
+\bibitem[{Mohasel~Arjomandi et~al.(2024)Mohasel~Arjomandi, Korobskiy, and
+  Chacko}]{arjomandi2024dataset}
+Mohasel~Arjomandi H, Korobskiy D, Chacko G (2024) Parsed open citations and
+  {PubMed} data. \doi{10.13012/B2IDB-5216575_V1},
+  \urlprefix\url{https://databank.illinois.edu/datasets/IDB-5216575}
+
+\bibitem[{{OpenCitations}(2024)}]{ocmeta2024dump}
+{OpenCitations} (2024) {OpenCitations} {Meta} {CSV} dataset of all
+  bibliographic metadata. \doi{10.6084/M9.FIGSHARE.21747461.V7},
+  \urlprefix\url{https://figshare.com/articles/dataset/OpenCitations_Meta_CSV_dataset_of_all_bibliographic_metadata/21747461/7}
+
+\bibitem[{Peng et~al.(2022)Peng, Romero, and Horv{\'a}t}]{peng2022attention}
+Peng H, Romero DM, Horv{\'a}t E{\'A} (2022) Dynamics of cross-platform
+  attention to retracted papers. Proceedings of the National Academy of
+  Sciences 119(25). \doi{10.1073/pnas.2119086119},
+  \urlprefix\url{http://dx.doi.org/10.1073/pnas.2119086119}
+
+\bibitem[{Peroni and Shotton(2020)}]{peroni2020opencitations}
+Peroni S, Shotton D (2020) {OpenCitations}, an infrastructure organization for
+  open scholarship. Quantitative Science Studies 1(1):428--444.
+  \doi{10.1162/qss_a_00023},
+  \urlprefix\url{http://dx.doi.org/10.1162/qss_a_00023}
+
+\bibitem[{Peterson et~al.(2025)Peterson, Alexander, Fortner, Elhawi, and
+  Nugent}]{peterson2025nih}
+Peterson CJ, Alexander R, Fortner M, et~al (2025) Retraction notices from {NIH}
+  funded studies: Insights and lessons. Journal of Electronic Resources in
+  Medical Libraries 22(4):157--164. \doi{10.1080/15424065.2025.2582838},
+  \urlprefix\url{http://dx.doi.org/10.1080/15424065.2025.2582838}
+
+\bibitem[{Raasveldt and M{\"u}hleisen(2019)}]{raasveldt2019duckdb}
+Raasveldt M, M{\"u}hleisen H (2019) {DuckDB}: an embeddable analytical
+  database. In: Proceedings of the 2019 International Conference on Management
+  of Data. ACM, SIGMOD/PODS '19, pp 1981--1984, \doi{10.1145/3299869.3320212},
+  \urlprefix\url{http://dx.doi.org/10.1145/3299869.3320212}
+
+\bibitem[{Rittman(2025)}]{rittman2025rw}
+Rittman M (2025) {Retraction Watch} retractions now in the {Crossref} {API}.
+  Crossref blog, \doi{10.13003/692016},
+  \urlprefix\url{http://dx.doi.org/10.13003/692016}
+
+\bibitem[{Robins et~al.(1986)Robins, Breslow, and
+  Greenland}]{robins1986estimator}
+Robins J, Breslow N, Greenland S (1986) Estimators of the {Mantel-Haenszel}
+  variance consistent in both sparse data and large-strata limiting models.
+  Biometrics 42(2):311. \doi{10.2307/2531052},
+  \urlprefix\url{http://dx.doi.org/10.2307/2531052}
+
+\bibitem[{Saito and Rehmsmeier(2015)}]{saito2015prc}
+Saito T, Rehmsmeier M (2015) The precision-recall plot is more informative than
+  the {ROC} plot when evaluating binary classifiers on imbalanced datasets.
+  PLOS ONE 10(3):e0118432. \doi{10.1371/journal.pone.0118432},
+  \urlprefix\url{http://dx.doi.org/10.1371/journal.pone.0118432}
+
+\bibitem[{Salisbury et~al.(2026)Salisbury, Roggio, Jaimes~Fajardo, and
+  Smith}]{salisbury2026nih}
+Salisbury L, Roggio R, Jaimes~Fajardo D, et~al (2026) Characteristics of
+  publication retractions of {National Institutes of Health} and {National
+  Science Foundation} funded research. Science \& Technology Libraries pp
+  1--16. \doi{10.1080/0194262x.2026.2656747},
+  \urlprefix\url{http://dx.doi.org/10.1080/0194262X.2026.2656747}
+
+\bibitem[{Schneider et~al.(2020)Schneider, Ye, Hill, and
+  Whitehorn}]{schneider2020continued}
+Schneider J, Ye D, Hill AM, et~al (2020) Continued post-retraction citation of
+  a fraudulent clinical trial report, 11 years after it was retracted for
+  falsifying data. Scientometrics 125(3):2877--2913.
+  \doi{10.1007/s11192-020-03631-1},
+  \urlprefix\url{http://dx.doi.org/10.1007/s11192-020-03631-1}
+
+\bibitem[{Stern et~al.(2014)Stern, Casadevall, Steen, and
+  Fang}]{stern2014costs}
+Stern AM, Casadevall A, Steen RG, et~al (2014) Financial costs and personal
+  consequences of research misconduct resulting in retracted publications.
+  eLife 3. \doi{10.7554/elife.02956},
+  \urlprefix\url{http://dx.doi.org/10.7554/eLife.02956}
+
+\bibitem[{{Teixeira da Silva} et~al.(2025){Teixeira da Silva}, Santos-d'Amorim,
+  and Bornemann-Cimenti}]{teixeira2025citation}
+{Teixeira da Silva} JA, Santos-d'Amorim K, Bornemann-Cimenti H (2025) The
+  citation of retracted papers and impact on the integrity of the scientific
+  biomedical literature. Learned Publishing 38(2). \doi{10.1002/leap.1667},
+  \urlprefix\url{http://dx.doi.org/10.1002/leap.1667}
+
+\bibitem[{Traag et~al.(2019)Traag, Waltman, and van Eck}]{traag2019leiden}
+Traag VA, Waltman L, van Eck NJ (2019) From {Louvain} to {Leiden}: guaranteeing
+  well-connected communities. Scientific Reports 9(1).
+  \doi{10.1038/s41598-019-41695-z},
+  \urlprefix\url{http://dx.doi.org/10.1038/s41598-019-41695-z}
+
+\bibitem[{van~der Vet and Nijveen(2016)}]{vandervet2016propagation}
+van~der Vet PE, Nijveen H (2016) Propagation of errors in citation networks: a
+  study involving the entire citation network of a widely cited paper published
+  in, and later retracted from, the journal {Nature}. Research Integrity and
+  Peer Review 1(1). \doi{10.1186/s41073-016-0008-5},
+  \urlprefix\url{http://dx.doi.org/10.1186/s41073-016-0008-5}
+
+\bibitem[{Wilson(1927)}]{wilson1927}
+Wilson EB (1927) Probable inference, the law of succession, and statistical
+  inference. Journal of the American Statistical Association 22(158):209--212.
+  \doi{10.1080/01621459.1927.10502953},
+  \urlprefix\url{http://dx.doi.org/10.1080/01621459.1927.10502953}
+
+\end{thebibliography}

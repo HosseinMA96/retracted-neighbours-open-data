@@ -1,0 +1,63 @@
+% Cover letter for the Scientometrics submission of Paper D. Numbers match content/abstract.tex and FINDINGS.md.
+\documentclass[10pt]{letter}
+\usepackage[margin=1.6cm,top=1.2cm,bottom=1.4cm]{geometry}
+\usepackage{xurl}
+\sloppy
+\usepackage[hidelinks]{hyperref}
+\signature{Hossein Mohasel Arjomandi\\Microsoft, Redmond, WA, USA\\\href{mailto:hosseinm@microsoft.com}{hosseinm@microsoft.com}}
+\address{}
+\date{\today}
+\begin{document}
+\begin{letter}{Editorial Office\\\emph{Scientometrics}}
+\opening{Dear Editor,}
+
+I am pleased to submit the manuscript \emph{``Do links to retracted papers predict future retractions? An
+out-of-sample test on the open biomedical citation graph''} for consideration as a research article in
+\emph{Scientometrics}.
+
+\textbf{Context.} Research-integrity screening tools flag papers that cite retracted work, and a recent retrospective
+study of Web of Science data found that such papers are retracted more often. That association has not been tested
+the way a screen is used: with information frozen at one date and outcomes observed afterwards, and separately from
+the retraction waves that sweep through individual journals.
+
+\textbf{What the manuscript does.} Using only open data, I computed scores for 10.5 million biomedical papers on the
+January 2024 OpenCitations graph with the retractions known at that date, froze them with a hash, and compared them
+with retractions recorded by Retraction Watch from February 2024 to October 2026. The scores, metrics and decision
+rule were specified in advance. The main findings are:
+\begin{itemize}
+\item Citing a paper that had already been retracted predicts later retraction: within journal and publication year
+  the odds ratio is 2.99 (95\% CI 2.73--3.27), unchanged when reference-list length is also held fixed.
+\item As a screen the signal is weak: 0.9\% of the 1,000 highest-ranked papers were retracted later (2.2\% once
+  reviews, which often cite retracted work but are rarely retracted, are set aside), and 84\% of later retractions
+  cite no retracted paper.
+\item Timing matters: inside the late-2023 retraction wave, a journal's own retraction rate was the far better screen.
+  Supporting analyses show that retracted paper-mill papers cluster in citation communities beyond their journal and
+  year, and that NIH-funded papers cite already-retracted work as often as other papers in the same journal and year.
+\end{itemize}
+
+\textbf{Why \emph{Scientometrics}.} The work combines citation-network analysis, open bibliographic data and research
+integrity, all central to the journal. It builds on studies of retracted papers and their citations published in
+\emph{Scientometrics}, and it gives editors and tool builders a concrete, quantified answer to how much links to
+retracted work are worth as a screening signal. Retracted papers are described only by their public labels; no
+individuals are named, and no score of any non-retracted paper is released.
+
+\textbf{Openness.} All inputs are open. The code, the specification file with its recorded hash, run records with
+checksums, and a map from every number to the run that produced it are at
+\mbox{\href{https://github.com/HosseinMA96/retracted-neighbours-open-data}{github.com/HosseinMA96/retracted-neighbours-open-data}}; the derived dataset is on Zenodo
+(\mbox{\href{https://doi.org/10.5281/zenodo.23874477}{doi:10.5281/zenodo.23874477}}). Analyses added after the outcomes were seen are labelled post hoc.
+
+\textbf{Related submission.} A separate manuscript by the same author, \emph{``Can open citation data detect
+citation stacking? An audit against Clarivate's journal suppressions''}, is under consideration at
+\emph{Scientometrics} (submitted 31 October 2026). It uses the same open citation snapshot but addresses a different
+question (journal-level citation stacking); the two manuscripts share no results or text.
+
+The manuscript is original, has not been published, and is not under consideration elsewhere. I am the sole author,
+there is no funding to declare and I have no competing interests. The use of generative AI is disclosed in the
+Methods section, in line with Springer Nature's policy. The views expressed are my own and do not necessarily reflect
+those of Microsoft.
+
+Thank you for considering this manuscript.
+
+\closing{Sincerely,}
+\end{letter}
+\end{document}
