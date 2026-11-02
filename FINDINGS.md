@@ -94,7 +94,7 @@ Write the paper only from this file. Runs cited are the final, deterministic run
 | MH OR by share S2 vs S2 = 0 (same strata): ≤1% / 1–2% / 2–5% / >5% | 1.74 [1.14, 2.66] / 2.82 [2.33, 3.41] / 2.98 [2.64, 3.35] / 3.96 [3.24, 4.85] | `d15_lenadj_20261101_01` |
 | Review share (Review, Systematic Review, Meta-Analysis) by S1 = 0 / 3–4 / 5+ | 11.6% / 47.8% / 69.6% | `d15_lenadj_20261101_01` |
 | Reviews with S1 5+ retracted later | 1 of 1,010 (0.10%) | `d15_lenadj_20261101_01` |
-| Non-reviews retracted later by S1 = 0 / 1 / 2 / 3–4 / 5+ | 0.036% / 0.35% / 0.79% / 1.52% / 2.27% (10 of 441) | `d15_lenadj_20261101_01` |
+| Non-reviews retracted later by S1 = 0 / 1 / 2 / 3–4 / 5+ | 0.036% / 0.35% / 0.79% / 1.52% / 2.27% (10 of 441; Wilson 1.24–4.12) | `d15_lenadj_20261101_01` |
 | MH OR without reviews (journal × year × decile) | 3.19 [2.90, 3.51] | `d15_lenadj_20261101_01` |
 | Lou et al. 2026 (literature, for the contrast) | 9.58% at five retracted references; 1.43% overall vs 0.12% global | `lit/LIT.md` |
 | Screen, S1 ranking, reviews excluded (main): precision@1,000 | 22 of 1,000 = 2.2% [1.5, 3.3], lift 52 (vs 0.9% with reviews) | `d15_screen_20261102_01` |
