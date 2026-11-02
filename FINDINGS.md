@@ -83,4 +83,4 @@ Write the paper only from this file. Runs cited are the final, deterministic run
 | Retracted papers / in the graph | 62,735 / 52,254 | `d14_dataset_20261101_04` |
 | Citation links touching a retracted paper | 2,259,192 | `d14_dataset_20261101_04` |
 | Community memberships (D9 subgraph) | 2,698,556 | `d14_dataset_20261101_04` |
-| Zenodo record | draft 23874477, reserved DOI 10.5281/zenodo.23874477 (published by the user) | `d14_zenodo_20261101_01` |
+| Zenodo record | 23874477, DOI 10.5281/zenodo.23874477, **published 2026-11-01** (open, CC BY 4.0) | `d14_zenodo_20261101_01` |

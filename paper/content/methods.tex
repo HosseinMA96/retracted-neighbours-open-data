@@ -87,4 +87,5 @@ citations per paper by year relative to the retraction year, for papers retracte
 
 \paragraph{Implementation.} All joins and aggregations run in DuckDB \citep{raasveldt2019duckdb} on one 8-core, 64 GB
 cloud machine. Every run writes its configuration, the hash of its script, its counts and checksums; per-paper scores
-are never released.
+are never released. The retracted papers, the citation links that touch them and the community memberships are
+released as a dataset \citep{arjomandi2026retracteddata}.

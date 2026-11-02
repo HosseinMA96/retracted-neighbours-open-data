@@ -18,3 +18,6 @@ Script keeps no author, institution, title or notes fields.
 - Median lag (notice − publication): 1.51 years for biomedical by T0; 2.68 for after T0.
 - Outputs: `reason_counts.csv`, `papers_by_notice_year_mill.csv`; paper table `~/d/data/work/rw_papers_d02_rw_20261101_01.parquet` (sha256 `809945a3…`).
 - Note: the biomedical flag here is provisional; D5 defines biomedical by PubMed presence.
+
+## Licence check before the Zenodo deposit (2026-11-01)
+Crossref's metadata-retrieval documentation (https://www.crossref.org/documentation/retrieve-metadata/, read 2026-11-01) lists the "Open Funder Registry and Retraction Watch database" as **CC0** in its licence table, and states "We release any Crossref-generated data, including aggregations, as public domain material." The GitLab repository itself still has no LICENSE file; Crossref's blog asks published work to cite the source (a request, not a condition). The deposited dataset takes only factual fields (DOI, PMID, dates, reasons, article type) and no titles, authors, institutions or notes.

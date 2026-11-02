@@ -19,3 +19,7 @@ Built on the VM at `~/d/data/release/d14_dataset_20261101_01/`; **not deposited*
 ## d14_zenodo_20261101_01: Zenodo DRAFT (not published)
 - `d14_zenodo.py` (token from `~/.zenodo_token` on the VM, mode 600; never logged): draft **23874477**, reserved DOI **10.5281/zenodo.23874477**, 5 files uploaded (README.md, the three data files, SHA256SUMS); **MD5 of every file matches Zenodo's**. State: unsubmitted. Metadata: `runs/d14_zenodo_20261101_01/zenodo_metadata.json` (CC BY 4.0, dataset, version 1.0, related identifiers: companion repo, Data Bank DOI, Meta DOI).
 - Publishing is done by the user on zenodo.org (irreversible: DOI live, files fixed).
+
+## 2026-11-01: published by the user
+Checked via the Zenodo API: record 23874477 status "published", publication date 2026-11-01, open access, CC BY 4.0, 5 files (sizes as uploaded); doi.org/10.5281/zenodo.23874477 resolves. Cited in the paper (Methods, Data availability; `arjomandi2026retracteddata`). The upload token was revoked by the user (requested; confirm).
+**When the paper has an arXiv ID or journal DOI:** edit the Zenodo record's metadata (no new version needed) and add it as a related identifier ("is supplement to").

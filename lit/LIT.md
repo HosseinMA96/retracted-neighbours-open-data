@@ -45,7 +45,7 @@ No study found (2026-11-01 searches) that measures **NIH-funded citing papers** 
 | Massari et al. (2024), *OpenCitations Meta*, QSS | 10.1162/qss_a_00292 | ID map (DOI, PMID) and journals |
 | Peroni & Shotton (2020), QSS | 10.1162/qss_a_00023 | OpenCitations |
 | Heibi, Peroni & Shotton (2019), *COCI*, Scientometrics | 10.1007/s11192-019-03217-6 | Index |
-| Rittman (2025), *Retraction Watch retractions now in the Crossref API*, Crossref blog | 10.13003/692016 | Crossref asks published work to cite the source; no licence named for the data. TODO(verify) the preferred citation for the dataset itself |
+| Rittman (2025), *Retraction Watch retractions now in the Crossref API*, Crossref blog | 10.13003/692016 | Retraction Watch database is CC0 per Crossref's licence table (documentation/retrieve-metadata, checked 2026-11-01); Crossref asks published work to cite the source; no licence named for the data. TODO(verify) the preferred citation for the dataset itself |
 
 ## Gate decision (2026-11-01)
 

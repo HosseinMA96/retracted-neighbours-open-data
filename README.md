@@ -122,7 +122,7 @@ run the steps in [`REPRODUCE.md`](REPRODUCE.md) §3 in order.
 |---|---|---|---|
 | Parsed OpenCitations snapshot, Jan 2024 | citation graph | Illinois Data Bank, [doi:10.13012/B2IDB-5216575_V1](https://doi.org/10.13012/B2IDB-5216575_V1) | CC BY 4.0 |
 | OpenCitations Meta | DOIs, PMIDs, journals | figshare, [doi:10.6084/m9.figshare.21747461.v7](https://doi.org/10.6084/m9.figshare.21747461.v7) | CC0 |
-| Retraction Watch database | retraction labels, dates, reasons | [gitlab.com/crossref/retraction-watch-data](https://gitlab.com/crossref/retraction-watch-data), commit `a98cc7e` | Crossref asks users to cite the source |
+| Retraction Watch database | retraction labels, dates, reasons | [gitlab.com/crossref/retraction-watch-data](https://gitlab.com/crossref/retraction-watch-data), commit `a98cc7e` | CC0 per Crossref's licence table; Crossref asks published work to cite the source |
 | PubMed 2026 baseline | retraction flags, NIH grants | [NLM baseline files](https://ftp.ncbi.nlm.nih.gov/pubmed/baseline/) | courtesy of the U.S. National Library of Medicine |
 
 The inputs are large and are not redistributed here. The derived dataset (all 62,735 retracted papers with their
