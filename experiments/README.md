@@ -13,7 +13,7 @@
 | `d11_event/` | Citations around retraction vs matched controls | `d11_event_20261101_02` (`_03` = repeat, identical) | `RESULTS_LOG.md` |
 | `d12_check/` | Label-quality checks (match precision; PubMed-only retractions) | `d12_check_20261101_02` | `RESULTS_LOG.md` |
 | `d13_figures/` | Paper figures from run records | `d13_fig_20261101_08` | `RESULTS_LOG.md` |
-| `d14_dataset/` | Release dataset (built on the VM) | `d14_dataset_20261101_02` | `RESULTS_LOG.md` |
+| `d14_dataset/` | Release dataset (built on the VM) and Zenodo draft | `d14_dataset_20261101_04` (`_05` = identical repeat), `d14_zenodo_20261101_01` | `RESULTS_LOG.md` |
 
 Runs not cited (failed, stopped or superseded) are listed with the reason in `../REPRODUCE.md` §5 and carry a
 `SUPERSEDED.txt` in their folder.

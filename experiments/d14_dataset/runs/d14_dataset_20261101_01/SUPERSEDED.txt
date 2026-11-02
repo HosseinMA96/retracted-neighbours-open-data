@@ -1,1 +1,1 @@
-Superseded by d14_dataset_20261101_02 (edge file sorted, so its checksum is reproducible).
+Superseded by d14_dataset_20261101_04 (adds communities.csv.gz; retracted_papers.csv.gz row and OMID-list order fixed so builds are byte-identical).

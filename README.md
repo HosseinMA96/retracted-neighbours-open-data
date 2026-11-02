@@ -125,8 +125,9 @@ run the steps in [`REPRODUCE.md`](REPRODUCE.md) §3 in order.
 | Retraction Watch database | retraction labels, dates, reasons | [gitlab.com/crossref/retraction-watch-data](https://gitlab.com/crossref/retraction-watch-data), commit `a98cc7e` | Crossref asks users to cite the source |
 | PubMed 2026 baseline | retraction flags, NIH grants | [NLM baseline files](https://ftp.ncbi.nlm.nih.gov/pubmed/baseline/) | courtesy of the U.S. National Library of Medicine |
 
-The inputs are large and are not redistributed here. The derived dataset (retracted papers with their citation
-neighbourhoods and retraction dates) will be deposited separately with its own DOI.
+The inputs are large and are not redistributed here. The derived dataset (all 62,735 retracted papers with their
+retraction dates and reasons, the 2.26 million citation links that touch them, and the community memberships) is on
+Zenodo: [doi:10.5281/zenodo.23874477](https://doi.org/10.5281/zenodo.23874477).
 
 ## 🔒 Rigour by design
 

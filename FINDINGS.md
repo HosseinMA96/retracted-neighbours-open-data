@@ -76,3 +76,11 @@ Write the paper only from this file. Runs cited are the final, deterministic run
 | Median publication-to-retraction lag, biomedical papers retracted after T0 | 2.68 years | `d02_rw_20261101_01` |
 | Match precision (hand-read sample) | 0 wrong of 292 judgeable (rule-of-three 95% upper bound ≈1%) | `d12_check_20261101_02` |
 | PubMed-flagged, not in Retraction Watch: notices 2024–2026 | 2,365 of 3,205 (74%) | `d12_check_20261101_02` |
+
+## Dataset (Zenodo)
+| Claim | Number | Run |
+|---|---|---|
+| Retracted papers / in the graph | 62,735 / 52,254 | `d14_dataset_20261101_04` |
+| Citation links touching a retracted paper | 2,259,192 | `d14_dataset_20261101_04` |
+| Community memberships (D9 subgraph) | 2,698,556 | `d14_dataset_20261101_04` |
+| Zenodo record | draft 23874477, reserved DOI 10.5281/zenodo.23874477 (published by the user) | `d14_zenodo_20261101_01` |

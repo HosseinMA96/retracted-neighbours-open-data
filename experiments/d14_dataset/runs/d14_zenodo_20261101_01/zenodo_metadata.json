@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "upload_type": "dataset",
+    "title": "Retracted papers and their open citation neighbourhoods: Retraction Watch labels linked to the OpenCitations graph (January 2024)",
+    "creators": [
+      {
+        "name": "Mohasel Arjomandi, Hossein",
+        "affiliation": "Microsoft"
+      }
+    ],
+    "description": "<p>Retraction labels and open citation links for the paper <em>Do links to retracted papers predict future retractions?\nAn out-of-sample test on the open biomedical citation graph</em> (H. Mohasel Arjomandi, submitted).</p>\n<p><strong>Files</strong></p>\n<ul>\n<li><code>retracted_papers.csv.gz</code> (62,735 rows): every paper with a retraction in the Retraction Watch database\n(copy of 30 October 2026, repository commit a98cc7e): DOI, PMID, date of the first retraction notice, publication year,\npaper-mill flag, Retraction Watch reasons and article type, the matching OpenCitations OMIDs, and whether the paper is in the\nJanuary 2024 OpenCitations graph (52,254 are).</li>\n<li><code>citation_edges.csv.gz</code> (2,259,192 rows): every citation in the OpenCitations snapshot of January 2024 in which\nthe citing or the cited paper is retracted, with OMID, DOI, PMID and publication year at both ends.</li>\n<li><code>communities.csv.gz</code> (2,698,556 rows): Leiden community memberships (two seeds) for the subgraph used in the\npaper's concentration analysis.</li>\n<li><code>README.md</code> and <code>SHA256SUMS</code>.</li>\n</ul>\n<p><strong>Time split.</strong> Retraction dates let users choose any time point T: papers retracted by T are known, later ones\nare outcomes. The graph is essentially complete to about September 2023.</p>\n<p><strong>Not included, by design.</strong> No author names, titles or notes, and no score or ranking of non-retracted papers.\nA retraction is a public editorial label and does not by itself imply misconduct.</p>\n<p><strong>Sources.</strong> OpenCitations (parsed snapshot, Illinois Data Bank, doi:10.13012/B2IDB-5216575_V1, CC BY 4.0);\nOpenCitations Meta (doi:10.6084/m9.figshare.21747461.v7, CC0); Retraction Watch database distributed by Crossref (please\ncite the source); PubMed identifiers courtesy of the U.S. National Library of Medicine (may not reflect the latest NLM data).</p>\n<p>Code, pre-registration and run records: https://github.com/HosseinMA96/retracted-neighbours-open-data</p>",
+    "access_right": "open",
+    "license": "cc-by-4.0",
+    "keywords": [
+      "retraction",
+      "research integrity",
+      "citation network",
+      "OpenCitations",
+      "Retraction Watch",
+      "paper mills",
+      "PubMed"
+    ],
+    "version": "1.0",
+    "language": "eng",
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/HosseinMA96/retracted-neighbours-open-data",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "10.13012/B2IDB-5216575_V1",
+        "relation": "isDerivedFrom",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.6084/m9.figshare.21747461.v7",
+        "relation": "isDerivedFrom",
+        "scheme": "doi"
+      }
+    ],
+    "notes": "Derived from public sources; see README.md for definitions. Retraction labels follow the Retraction Watch database.",
+    "prereserve_doi": true
+  }
+}

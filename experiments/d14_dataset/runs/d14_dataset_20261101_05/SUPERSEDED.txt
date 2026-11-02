@@ -1,0 +1,1 @@
+Repeat of _04 to check determinism: all three data files byte-identical to _04 (README differs only in run id and build time).

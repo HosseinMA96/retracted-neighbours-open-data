@@ -1,0 +1,8 @@
+[    71.7s] release_dir: /home/azureuser/d/data/release/d14_dataset_20261101_05
+[    71.7s] retracted_rows: 62735
+[    71.7s] retracted_in_graph: 52254
+[    71.7s] edge_rows: 2259192
+[    71.7s] community_rows: 2698556
+[    71.7s] files: {'SHA256SUMS': 339, 'README.md': 2305, 'communities.csv.gz': 38319591, 'retracted_papers.csv.gz': 1325322, 'citation_edges.csv.gz': 56414957}
+[    71.7s] release_sha256: ['5c4a65923265037a93a742f13622f0d8f3fb27e6431c62566a00276e16b6dc85  README.md', '3fe1d15f95df2a06972ed2586f7f9180640f82f7336e83f193db456a180803cc  citation_edges.csv.gz', 'c3810b447426bcd8072ba361ae9646b8efef1ebd086a03046f14514d3f78a6b7  communities.csv.gz', '8b3e90737d39eeb667b1c92011ffbfb03b76a8636f14d3a9c7c887a4282faa31  retracted_papers.csv.gz']
+done in 71.7 s -> /home/azureuser/d/experiments/d14_dataset/runs/d14_dataset_20261101_05

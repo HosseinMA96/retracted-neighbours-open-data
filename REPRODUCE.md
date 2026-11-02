@@ -47,7 +47,7 @@ Run each from its experiment folder: `python <script> <run_id> [args]`.
 | Event study | `d11_event/d11_event.py d11_event_20261101_02 d05_match_20261101_02` (repeat `_03` = identical) | 1 min |
 | Label checks | `d12_check/d12_check.py d12_check_20261101_02 d05_match_20261101_02` | 5 min |
 | Figures | `d13_figures/d13_figures.py d13_fig_20261101_08` (reads run records only; runs on a laptop) | seconds |
-| Release dataset | `d14_dataset/d14_dataset.py d14_dataset_20261101_02 d05_match_20261101_02` | 2 min |
+| Release dataset | `d14_dataset/d14_dataset.py d14_dataset_20261101_04 d05_match_20261101_02 d09_conc_20261101_03` (then `d14_zenodo.py`, deposited as doi:10.5281/zenodo.23874477) | 3 min |
 | Paper | `cd paper && tectonic -X compile main.tex` | – |
 
 ## 4. Determinism
@@ -70,7 +70,7 @@ Run each from its experiment folder: `python <script> <run_id> [args]`.
 | `d09_conc_20261101_02` | Superseded by `_03` (deterministic controls and edge order) |
 | `d11_event_20261101_01` | Superseded by `_02` (deterministic controls) |
 | `d12_check_20261101_01` | Superseded by `_02` (deterministic sample order) |
-| `d14_dataset_20261101_01` | Superseded by `_02` (sorted edge file) |
+| `d14_dataset_20261101_01`–`_03`, `_05` | Superseded by `_04` (sorted edges; communities added; deterministic row and OMID order); `_05` is an identical repeat |
 | `d13_fig_20261101_01`–`_07` | Layout iterations, pre-fix inputs, PDF timestamps; the figures in the paper are `d13_fig_20261101_08` |
 
 ## 6. Restoring the large data

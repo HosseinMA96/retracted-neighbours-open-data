@@ -1,0 +1,34 @@
+{
+  "run_id": "d14_dataset_20261101_03",
+  "script": "d14_dataset.py",
+  "script_sha256": "88b3415ef5c38f333722da60732c4c57882238d011d5e7ab9ec5d9a0c01258ac",
+  "config": {
+    "match_run": "d05_match_20261101_02",
+    "community_run": "d09_conc_20261101_03"
+  },
+  "host": "vm-project-c",
+  "python": "3.11.18",
+  "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+  "started_utc": "2026-11-02T02:13:55Z",
+  "results": {
+    "release_dir": "/home/azureuser/d/data/release/d14_dataset_20261101_03",
+    "retracted_rows": 62735,
+    "retracted_in_graph": 52254,
+    "edge_rows": 2259192,
+    "community_rows": 2698556,
+    "files": {
+      "SHA256SUMS": 339,
+      "README.md": 2305,
+      "communities.csv.gz": 38319591,
+      "retracted_papers.csv.gz": 1325484,
+      "citation_edges.csv.gz": 56414957
+    },
+    "release_sha256": [
+      "1327b0060e86cf21c44d4be4aff93a278cca4615b1999c0f8a62cd0c593497ee  README.md",
+      "3fe1d15f95df2a06972ed2586f7f9180640f82f7336e83f193db456a180803cc  citation_edges.csv.gz",
+      "c3810b447426bcd8072ba361ae9646b8efef1ebd086a03046f14514d3f78a6b7  communities.csv.gz",
+      "9033fba8174657ccc878041e7eea5e4127e86d1508ea3abdb1e576c8f9b981bb  retracted_papers.csv.gz"
+    ]
+  },
+  "seconds": 159.6
+}
