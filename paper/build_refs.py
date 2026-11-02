@@ -2,7 +2,8 @@
 To fetch a new entry: curl -sL -H "Accept: application/x-bibtex; charset=utf-8" https://doi.org/<doi> > bib_raw/<key>.bib
 Fixes applied (logged in bib_verification.tsv): key renamed to ours; month macros dropped; '&' escaped;
 mantel1959 completed by hand (Crossref record lacks authors and pages; checked against PubMed 13655060);
-rittman2025rw typed as @misc (Crossref blog post).
+rittman2025rw typed as @misc (Crossref blog post);
+azoulay2015retractions: Krieger's given name added (NBER w18499 lists "Joshua L. Krieger").
 usage: python build_refs.py
 """
 import re
@@ -23,6 +24,8 @@ for line in (HERE / "dois.txt").read_text().splitlines():
     b = re.sub(r"(?<!\\)&", r"\\&", b.replace("&amp;", "&"))
     if key == "mantel1959":
         b = MANTEL
+    if key == "azoulay2015retractions":   # Crossref lacks Krieger's given name; NBER w18499 page: "Joshua L. Krieger"
+        b = b.replace("and Krieger and", "and Krieger, Joshua L. and")
     if key == "rittman2025rw":
         b = re.sub(r"^@article", "@misc", b)[:-1] + ", howpublished={Crossref blog}}"
     out.append(b)

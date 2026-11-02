@@ -23,3 +23,5 @@ Built on the VM at `~/d/data/release/d14_dataset_20261101_01/`; **not deposited*
 ## 2026-11-01: published by the user
 Checked via the Zenodo API: record 23874477 status "published", publication date 2026-11-01, open access, CC BY 4.0, 5 files (sizes as uploaded); doi.org/10.5281/zenodo.23874477 resolves. Cited in the paper (Methods, Data availability; `arjomandi2026retracteddata`). The upload token was revoked by the user (requested; confirm).
 **When the paper has an arXiv ID or journal DOI:** edit the Zenodo record's metadata (no new version needed) and add it as a related identifier ("is supplement to").
+
+Note 2026-11-01: `d14_dataset.py` and `d14_zenodo.py` templates now state the Retraction Watch licence (CC0 per Crossref). The published v1.0 record was built with the earlier text; its Zenodo description is to be edited by the user (see `paper/Critic/round_1_D_response.md`).

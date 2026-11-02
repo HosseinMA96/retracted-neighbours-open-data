@@ -71,8 +71,9 @@ No author names, titles, abstracts or notes; no scores or rankings of non-retrac
 editorial label and does not imply misconduct.
 
 ## Sources and licences
-OpenCitations data CC0 / the parsed snapshot CC BY 4.0 (Illinois Data Bank); OpenCitations Meta CC0; Retraction Watch data
-from Crossref (cite: Crossref, Retraction Watch database); PubMed identifiers courtesy of the U.S. National Library of Medicine
+OpenCitations data CC0 / the parsed snapshot CC BY 4.0 (Illinois Data Bank); OpenCitations Meta CC0; Retraction Watch database
+distributed by Crossref, CC0 per Crossref's licence table (https://www.crossref.org/documentation/retrieve-metadata/;
+Crossref asks that published work cite the source); PubMed identifiers courtesy of the U.S. National Library of Medicine
 (may not reflect the latest NLM data). This derived dataset: CC BY 4.0.
 
 ## Cite

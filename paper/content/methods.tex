@@ -34,14 +34,18 @@ The test is prospective in the sense that matters for a screening tool: all pred
 at a fixed time point $T_0$, and outcomes are retractions issued after $T_0$. The main time point is
 $T_0 = $ 31 January 2024. Only 116,123 citing links in the graph (0.006\%) carry a publication date after January 2024,
 so post-$T_0$ information can enter the predictors only negligibly. Because the graph is complete only to about September 2023, every analysis was
-repeated with $T_0' = $ 30 September 2023. The design, scores, metrics and decision rule were pre-registered in a
-file whose SHA-256 hash was recorded before any score was computed; the analysis code checks the hashes of the frozen
-score files before reading any outcome.
+repeated with $T_0' = $ 30 September 2023. The design, scores, metrics and decision rule were written into a
+specification file whose SHA-256 hash was recorded in the lab notebook before any score was computed, and the analysis
+code checks the hashes of the frozen score files before reading any outcome. The specification was not deposited with a
+third-party registry before the outcomes were read, so the design is pre-specified rather than formally
+pre-registered; analyses added later are labelled post hoc.
 
 \paragraph{Candidates and outcome.} Candidates are biomedical nodes published 2015--2023 that have a journal, at least
 one reference in the graph, and no retraction notice dated on or before $T_0$ (10,495,850 papers). A candidate is
 \emph{positive} if its first retraction notice falls between $T_0$ and 30 October 2026. Let $R_0$ denote the 44,401
-graph nodes retracted on or before $T_0$.
+graph nodes retracted on or before $T_0$. $R_0$ is defined by the date of the retraction notice; the Retraction
+Watch export does not record when a notice entered the database, so a few notices dated before $T_0$ may have been
+recorded only later and would not have been visible to a screen run on that date.
 
 \paragraph{Scores.} For a candidate $p$ with $d(p)$ references in the graph:
 $S_1(p)$ is the number of references of $p$ that are in $R_0$;
@@ -63,7 +67,7 @@ ratios for $S_1 \ge 1$, $S_3 \ge 1$ and $S_4 \ge 1$.
 mass retractions of special issues. To separate the neighbourhood signal from these clusters, the Mantel--Haenszel odds
 ratio \citep{mantel1959} of exposure ($S_1 \ge 1$) on outcome was computed with strata defined by journal $\times$
 publication year, with the Robins--Breslow--Greenland confidence interval \citep{robins1986estimator}. The
-pre-registered decision rule was that the signal holds within journal if the 95\% interval lies above 1.
+pre-specified decision rule was that the signal holds within journal if the 95\% interval lies above 1.
 
 \paragraph{Screening value.} Candidates were ranked by (i) $S_1$, with ties broken by $S_2$ and then at random;
 (ii) the journal baseline $B$; and (iii) a logistic model with $\operatorname{logit} B$, $\log(1+S_1)$,

@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img alt="Pre-registered" src="https://img.shields.io/badge/design-pre--registered-2a78d6">
+  <img alt="Pre-specified" src="https://img.shields.io/badge/design-pre--specified-2a78d6">
   <img alt="Open data only" src="https://img.shields.io/badge/data-open%20only-1baf7a">
   <img alt="Python 3.11" src="https://img.shields.io/badge/python-3.11-eda100">
   <img alt="Code: MIT" src="https://img.shields.io/badge/code-MIT-6250d6">
@@ -13,7 +13,7 @@
 </p>
 
 Companion repository to the paper by **Hossein Mohasel Arjomandi** (manuscript submitted for publication). It holds
-the code, the pre-registration, every run record with checksums, a map from each number in the paper to the run that
+the code, the design specification, every run record with checksums, a map from each number in the paper to the run that
 produced it, and the LaTeX source.
 
 ---
@@ -24,7 +24,7 @@ Integrity tools flag papers that cite retracted work, and a retrospective study 
 more often. This project asks whether the signal works **prospectively**, the way a screening tool is used. Scores are
 computed on the **January 2024** OpenCitations graph, using only the retractions known by then, **frozen with a hash**,
 and then compared with retractions issued from **February 2024 to October 2026** (Retraction Watch). The design, scores,
-metrics and decision rule were pre-registered before any score was computed.
+metrics and decision rule were specified in advance, in a file whose hash was logged before any score was computed.
 
 ## 📊 Results at a glance
 
@@ -34,7 +34,9 @@ metrics and decision rule were pre-registered before any score was computed.
 | Retracted later (Feb 2024 – Oct 2026) | **4,323** (0.041%) |
 | Already citing a retracted paper in Jan 2024 | 218,561 (2.1%) |
 | Later retraction rate with 0 / 1 / 2 / 3–4 retracted references | 0.035% / 0.27% / 0.51% / 0.83% |
-| **Odds ratio within journal × year** (the pre-registered test) | **2.99** (95% CI 2.73–3.27) ✅ signal holds |
+| **Odds ratio within journal × year** (the pre-specified test) | **2.99** (95% CI 2.73–3.27) ✅ signal holds |
+| … also holding reference-list length fixed (post hoc) | 3.03 (2.76–3.33) |
+| Research articles with ≥5 retracted references retracted later (reviews excluded, post hoc) | 2.27% (10 of 441) |
 | As a screen: share of the top 1,000 flagged papers retracted later | 0.9% (22 × the base rate) |
 | Later retractions that cite no retracted paper at all | 84% |
 | Inside the late-2023 retraction wave: the journal's own rate as a screen | 6.8% of its top 1,000 (lift 94) |
@@ -63,7 +65,7 @@ own. Every number above is traced in [`FINDINGS.md`](FINDINGS.md).
 ├── CITATION.cff         how to cite this repository
 ├── experiments/
 │   ├── README.md        index of steps and the runs cited in the paper
-│   ├── d07_prereg/      PREREGISTRATION.md (SHA-256 recorded before any score existed)
+│   ├── d07_prereg/      PREREGISTRATION.md: the design specification (SHA-256 logged before any score existed)
 │   ├── d00 … d14/       one folder per step: script(s), lab notebook RESULTS_LOG.md, runs/<run_id>/
 │   └── …/runs/<id>/     run.json (parameters, script hash, counts) · stdout.log · outputs · SHA256SUMS
 ├── paper/               LaTeX source (content/, main.tex), figures, refs.bib + DOI checks, main.pdf
@@ -82,7 +84,7 @@ flowchart LR
   IDS --> MATCH["d05 match<br/>83.3 % in graph"]
   RWT --> MATCH
   PMT --> MATCH
-  MATCH --> PRE["d07 pre-registration<br/>(hash frozen)"]
+  MATCH --> PRE["d07 design specification<br/>(hash frozen)"]
   PRE --> SC["d08 scores<br/>frozen + hashed"]
   SC --> EV["d08 evaluation<br/>post-2024 retractions"]
   MATCH --> SUP["d09 communities · d10 NIH<br/>d11 event study · d12 checks"]
@@ -131,8 +133,10 @@ Zenodo: [doi:10.5281/zenodo.23874477](https://doi.org/10.5281/zenodo.23874477).
 
 ## 🔒 Rigour by design
 
-- **Pre-registered.** [`PREREGISTRATION.md`](experiments/d07_prereg/PREREGISTRATION.md) fixed the scores, metrics,
-  sensitivity analyses and the decision rule; its SHA-256 was logged before any score was computed.
+- **Pre-specified.** [`PREREGISTRATION.md`](experiments/d07_prereg/PREREGISTRATION.md) fixed the scores, metrics,
+  sensitivity analyses and the decision rule; its SHA-256 was logged before any score was computed. It was not
+  deposited with a third-party registry before the outcomes were read, so it is a pre-specification, not a formal
+  pre-registration (the file name is historical). Analyses added later are in `experiments/d15_review1/`, labelled post hoc.
 - **Frozen scores.** The evaluation script checks the hashes of the frozen score files before it reads any outcome.
 - **Deterministic.** Fixed seeds, rows sorted before tie-breaks and resampling, controls chosen by a fixed hash; a
   repeat of the event study is byte-identical, and so are rebuilt figures.

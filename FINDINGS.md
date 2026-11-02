@@ -18,7 +18,7 @@ Write the paper only from this file. Runs cited are the final, deterministic run
 | Retracted papers matched to graph nodes | 52,254 / 62,735 (83.3%); by T0 87.9%, after T0 66.2% | `d05_match_20261101_02` |
 | Biomedical graph nodes | 31,464,435 | `d05_match_20261101_02` |
 
-## RQ1: prospective test (pre-registered, `experiments/d07_prereg/PREREGISTRATION.md`, sha256 cf15bfc2…)
+## RQ1: prospective test (pre-specified, `experiments/d07_prereg/PREREGISTRATION.md`, sha256 cf15bfc2…; not a formal registry pre-registration)
 | Claim | Number | Run |
 |---|---|---|
 | Test candidates (biomedical, pub 2015–2023, journal, ≥1 reference, not retracted by 2024-01-31) | 10,495,850 | `d08_scores_20261101_01` |
@@ -84,3 +84,16 @@ Write the paper only from this file. Runs cited are the final, deterministic run
 | Citation links touching a retracted paper | 2,259,192 | `d14_dataset_20261101_04` |
 | Community memberships (D9 subgraph) | 2,698,556 | `d14_dataset_20261101_04` |
 | Zenodo record | 23874477, DOI 10.5281/zenodo.23874477, **published 2026-11-01** (open, CC BY 4.0) | `d14_zenodo_20261101_01` |
+
+## Post hoc (review round 1): reference-list length and reviews
+| Claim | Number | Run |
+|---|---|---|
+| Median references, candidates citing a retracted paper vs not | 51 vs 34 | `d15_lenadj_20261101_01` |
+| MH OR S1 ≥ 1, strata journal × year × reference-count decile | 3.03 [2.76, 3.33] (1,838 strata); paper-mill 4.12 [3.21, 5.29]; other 2.89 [2.61, 3.19] | `d15_lenadj_20261101_01` |
+| Same, T0' | 2.47 [2.28, 2.67]; paper-mill 1.92; other 2.94 | `d15_lenadj_20261101_01` |
+| MH OR by share S2 vs S2 = 0 (same strata): ≤1% / 1–2% / 2–5% / >5% | 1.74 [1.14, 2.66] / 2.82 [2.33, 3.41] / 2.98 [2.64, 3.35] / 3.96 [3.24, 4.85] | `d15_lenadj_20261101_01` |
+| Review share (Review, Systematic Review, Meta-Analysis) by S1 = 0 / 3–4 / 5+ | 11.6% / 47.8% / 69.6% | `d15_lenadj_20261101_01` |
+| Reviews with S1 5+ retracted later | 1 of 1,010 (0.10%) | `d15_lenadj_20261101_01` |
+| Non-reviews retracted later by S1 = 0 / 1 / 2 / 3–4 / 5+ | 0.036% / 0.35% / 0.79% / 1.52% / 2.27% (10 of 441) | `d15_lenadj_20261101_01` |
+| MH OR without reviews (journal × year × decile) | 3.19 [2.90, 3.51] | `d15_lenadj_20261101_01` |
+| Lou et al. 2026 (literature, for the contrast) | 9.58% at five retracted references; 1.43% overall vs 0.12% global | `lit/LIT.md` |

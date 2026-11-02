@@ -1,8 +1,8 @@
 % Introduction. Numbers: ../FINDINGS.md.
 \section{Introduction}\label{sec:intro}
 
-Retractions have become far more frequent. In the Retraction Watch database, 13,210 papers have a first retraction
-notice dated 2023, more than in any earlier year, and papers retracted for paper-mill reasons rose from 246 in 2020 to
+Retractions have become far more frequent. Counts computed from the Retraction Watch database (copy of 30 October 2026) show that 13,210 papers
+have a first retraction notice dated 2023, more than in any earlier year, and papers retracted for paper-mill reasons rose from 246 in 2020 to
 6,782 in 2023
 \citep{rittman2025rw,candal2022papermills}. Because retractions are slow, often years after publication, editors and integrity
 teams look for early signals. One signal is already in use: the ``Feet of Clay'' Detector of the Problematic Paper
@@ -23,9 +23,9 @@ retraction prediction used text and metadata but no citation links, and a random
 This article tests the signal prospectively on open data. All predictors are computed on the January 2024
 OpenCitations graph \citep{arjomandi2024dataset} with the retractions known at that time, frozen with a hash, and then
 compared with retractions issued from February 2024 to October 2026, using the Retraction Watch database
-\citep{rittman2025rw}. The scores, metrics and decision rule were pre-registered. The contributions are:
+\citep{rittman2025rw}. The scores, metrics and decision rule were specified in advance. The contributions are:
 \begin{itemize}
-\item a prospective, pre-registered test of whether citing (or being cited by) a retracted paper predicts later
+\item a prospective test, with a pre-specified design, of whether citing (or being cited by) a retracted paper predicts later
 retraction, on 10.5 million biomedical papers;
 \item a separation of the neighbourhood signal from journal-level clustering, using strata of journal and publication
 year;

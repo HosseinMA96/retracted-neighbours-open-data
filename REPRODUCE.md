@@ -39,13 +39,14 @@ Run each from its experiment folder: `python <script> <run_id> [args]`.
 | Retraction Watch | `d02_retraction_watch/d02_rw_counts.py d02_rw_20261101_01` | seconds |
 | PubMed parse | `d04_pubmed/test_pubmed_parse.py` (unit test), then `d04_pubmed/d04_run.py d04_pubmed_20261101_01 7` | 33 min |
 | Matching | `d05_match/d05_match.py d05_match_20261101_02 d02_rw_20261101_01` | 3 min |
-| Pre-registration | `d07_prereg/PREREGISTRATION.md` (SHA-256 `cf15bfc25e66d951bcbf8b1d02a5cb4f8b487be036c05ba400538201087d19ee`, frozen before any score) | – |
+| Design specification | `d07_prereg/PREREGISTRATION.md` (SHA-256 `cf15bfc25e66d951bcbf8b1d02a5cb4f8b487be036c05ba400538201087d19ee`, frozen before any score) | – |
 | Scores (frozen) | `d08_rq1/d08_scores.py d08_scores_20261101_01 d05_match_20261101_02` | 4 min |
 | Evaluation | `d08_rq1/d08_eval.py d08_eval_20261101_03 d08_scores_20261101_01 d05_match_20261101_02 1000` (checks the frozen score hashes first) | 20 min |
 | Communities | `d09_concentration/d09_concentration.py d09_conc_20261101_03 d05_match_20261101_02` | 10 min |
 | NIH exposure | `d10_nih/d10_nih.py d10_nih_20261101_01 d05_match_20261101_02` | 1 min |
 | Event study | `d11_event/d11_event.py d11_event_20261101_02 d05_match_20261101_02` (repeat `_03` = identical) | 1 min |
 | Label checks | `d12_check/d12_check.py d12_check_20261101_02 d05_match_20261101_02` | 5 min |
+| Post hoc (review round 1) | `d15_review1/d15_lenadj.py d15_lenadj_20261101_01 d08_scores_20261101_01 d05_match_20261101_02` | 1 min |
 | Figures | `d13_figures/d13_figures.py d13_fig_20261101_08` (reads run records only; runs on a laptop) | seconds |
 | Release dataset | `d14_dataset/d14_dataset.py d14_dataset_20261101_04 d05_match_20261101_02 d09_conc_20261101_03` (then `d14_zenodo.py`, deposited as doi:10.5281/zenodo.23874477) | 3 min |
 | Paper | `cd paper && tectonic -X compile main.tex` | – |
@@ -56,7 +57,7 @@ Run each from its experiment folder: `python <script> <run_id> [args]`.
   node ID; the D12 sample with `random_state=20261101`.
 - Floating-point sums in parallel DuckDB aggregations can differ in the last digits between runs.
 - Verified: `d11_event_20261101_02` and `_03` are byte-identical.
-- Runs made before these fixes (listed below) are kept for the record. The pre-registered associations of D8 did not
+- Runs made before these fixes (listed below) are kept for the record. The pre-specified associations of D8 did not
   change; screening metrics changed only through tie-breaks; D9 and D11 changed slightly because other controls were
   drawn (details in each `RESULTS_LOG.md`). The paper cites only the runs in §3.
 

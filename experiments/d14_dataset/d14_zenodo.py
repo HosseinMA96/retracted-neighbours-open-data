@@ -35,8 +35,9 @@ are outcomes. The graph is essentially complete to about September 2023.</p>
 <p><strong>Not included, by design.</strong> No author names, titles or notes, and no score or ranking of non-retracted papers.
 A retraction is a public editorial label and does not by itself imply misconduct.</p>
 <p><strong>Sources.</strong> OpenCitations (parsed snapshot, Illinois Data Bank, doi:10.13012/B2IDB-5216575_V1, CC BY 4.0);
-OpenCitations Meta (doi:10.6084/m9.figshare.21747461.v7, CC0); Retraction Watch database distributed by Crossref (please
-cite the source); PubMed identifiers courtesy of the U.S. National Library of Medicine (may not reflect the latest NLM data).</p>
+OpenCitations Meta (doi:10.6084/m9.figshare.21747461.v7, CC0); Retraction Watch database distributed by Crossref, CC0 per
+Crossref's licence table (https://www.crossref.org/documentation/retrieve-metadata/), which permits redistribution
+(please cite the source); PubMed identifiers courtesy of the U.S. National Library of Medicine (may not reflect the latest NLM data).</p>
 <p>Code, pre-registration and run records: https://github.com/HosseinMA96/retracted-neighbours-open-data</p>
 """
 META = {"metadata": {
