@@ -38,6 +38,7 @@ metrics and decision rule were specified in advance, in a file whose hash was lo
 | … also holding reference-list length fixed (post hoc) | 3.03 (2.76–3.33) |
 | Research articles with ≥5 retracted references retracted later (reviews excluded, post hoc) | 2.27% (10 of 441) |
 | As a screen: share of the top 1,000 flagged papers retracted later | 0.9% (22 × the base rate) |
+| … with reviews set aside (post hoc) | 2.2% (52 × the base rate) |
 | Later retractions that cite no retracted paper at all | 84% |
 | Inside the late-2023 retraction wave: the journal's own rate as a screen | 6.8% of its top 1,000 (lift 94) |
 | Paper-mill retractions cluster in citation communities (vs matched controls) | 1.68× / 1.52× (two Leiden seeds) |

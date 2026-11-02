@@ -46,7 +46,7 @@ Run each from its experiment folder: `python <script> <run_id> [args]`.
 | NIH exposure | `d10_nih/d10_nih.py d10_nih_20261101_01 d05_match_20261101_02` | 1 min |
 | Event study | `d11_event/d11_event.py d11_event_20261101_02 d05_match_20261101_02` (repeat `_03` = identical) | 1 min |
 | Label checks | `d12_check/d12_check.py d12_check_20261101_02 d05_match_20261101_02` | 5 min |
-| Post hoc (review round 1) | `d15_review1/d15_lenadj.py d15_lenadj_20261101_01 d08_scores_20261101_01 d05_match_20261101_02` | 1 min |
+| Post hoc (review rounds 1–2) | `d15_review1/d15_lenadj.py d15_lenadj_20261101_01 d08_scores_20261101_01 d05_match_20261101_02`; `d15_review1/d15_screen_noreview.py d15_screen_20261102_01 d08_scores_20261101_01 d05_match_20261101_02` | 2 min |
 | Figures | `d13_figures/d13_figures.py d13_fig_20261101_08` (reads run records only; runs on a laptop) | seconds |
 | Release dataset | `d14_dataset/d14_dataset.py d14_dataset_20261101_04 d05_match_20261101_02 d09_conc_20261101_03` (then `d14_zenodo.py`, deposited as doi:10.5281/zenodo.23874477) | 3 min |
 | Paper | `cd paper && tectonic -X compile main.tex` | – |

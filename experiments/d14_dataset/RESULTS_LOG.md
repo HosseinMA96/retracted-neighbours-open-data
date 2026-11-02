@@ -25,3 +25,7 @@ Checked via the Zenodo API: record 23874477 status "published", publication date
 **When the paper has an arXiv ID or journal DOI:** edit the Zenodo record's metadata (no new version needed) and add it as a related identifier ("is supplement to").
 
 Note 2026-11-01: `d14_dataset.py` and `d14_zenodo.py` templates now state the Retraction Watch licence (CC0 per Crossref). The published v1.0 record was built with the earlier text; its Zenodo description is to be edited by the user (see `paper/Critic/round_1_D_response.md`).
+
+## 2026-11-02 (UTC): Zenodo description edited via API (metadata only)
+At the user's request, using the user's token once more (written to a 600-mode temp file, shredded after each call; never logged). Legacy `PUT /api/deposit/depositions/23874477` returned 404 until an edit draft existed; `POST /api/records/23874477/draft` (InvenioRDM) opened it; a full-object `PUT .../draft` returned 500; the legacy `PUT` with legacy metadata fields then succeeded (200) and `actions/publish` returned 202.
+Verified unauthenticated on the public API: status published, same DOI 10.5281/zenodo.23874477, version 1.0, CC BY 4.0, same 5 files and sizes, same related identifiers. Description now states Retraction Watch = CC0 per Crossref (permits redistribution), "design specification" (not "pre-registration"), "manuscript in preparation" (not "submitted"). Update to "submitted"/journal reference after submission. The files' README.md still says "submitted" (files are fixed).

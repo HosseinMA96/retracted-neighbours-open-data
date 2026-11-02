@@ -97,3 +97,5 @@ Write the paper only from this file. Runs cited are the final, deterministic run
 | Non-reviews retracted later by S1 = 0 / 1 / 2 / 3–4 / 5+ | 0.036% / 0.35% / 0.79% / 1.52% / 2.27% (10 of 441) | `d15_lenadj_20261101_01` |
 | MH OR without reviews (journal × year × decile) | 3.19 [2.90, 3.51] | `d15_lenadj_20261101_01` |
 | Lou et al. 2026 (literature, for the contrast) | 9.58% at five retracted references; 1.43% overall vs 0.12% global | `lit/LIT.md` |
+| Screen, S1 ranking, reviews excluded (main): precision@1,000 | 22 of 1,000 = 2.2% [1.5, 3.3], lift 52 (vs 0.9% with reviews) | `d15_screen_20261102_01` |
+| Same @10,000 | 109 = 1.09% [0.90, 1.31] | `d15_screen_20261102_01` |
