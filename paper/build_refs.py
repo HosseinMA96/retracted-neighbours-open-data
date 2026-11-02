@@ -44,7 +44,9 @@ ASCII = {"\u00e1": "{\\'a}", "\u00c1": "{\\'A}", "\u00e9": "{\\'e}", "\u00ed": "
 PROPER = ["OpenCitations", "PubMed", "Web of Science", "Retraction Watch", "National Institutes of Health",
           "National Science Foundation", "NIH", "NSF", "Crossref", "DuckDB", "COCI", "Meta", "SaneCite", "Louvain",
           "Leiden", "Mantel-Haenszel", "Google Scholar", "Microsoft Academic", "Scopus", "Dimensions", "Nature",
-          "Problematic Paper Screener", "Chest", "CSV", "API", "ROC", "DOI"]
+          "Problematic Paper Screener", "Chest", "CSV", "API", "ROC", "DOI",
+          "January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
+          "November", "December"]
 def protect(entry):
     def fix(m):
         t = m.group(2)
